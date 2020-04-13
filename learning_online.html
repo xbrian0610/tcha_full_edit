@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/learning_online.css">
+    <script src="./js/navbar.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/learning_select.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
+
+</head>
+
+<body>
+    <div id="index_top"></div>
+
+
+    <div class="card_area">
+
+        <div class="card">
+            <h5 class="card-header">線上自學</h5>
+            <div class="card-body">
+                <div>
+                    <button type="button" class="btn learning_button_set btn-outline-danger active"
+                        onclick="SetValueToInput(0)">全部</button>
+                    <button type="button" class="btn learning_button_set btn-outline-danger"
+                        onclick="SetValueToInput(1)">A長者膳食營養保健</button>
+                    <button type="button" class="btn learning_button_set btn-outline-success"
+                        onclick="SetValueToInput(2)">B長者口腔保健</button>
+                    <button type="button" class="btn learning_button_set btn-outline-warning"
+                        onclick="SetValueToInput(3)">C慢性疾病與用藥安全</button>
+                    <button type="button" class="btn learning_button_set btn-outline-info"
+                        onclick="SetValueToInput(4)">D長者懷舊與頭腦保健</button>
+                    <button type="button" class="btn learning_button_set btn-outline-primary"
+                        onclick="SetValueToInput(5)">E肌力升級與運動保健</button>
+                    <button type="button" class="btn learning_button_set btn-outline-secondary"
+                        onclick="SetValueToInput(6)">F其他</button>
+                </div>
+                <div>
+                    <input style="display: none;" type="text" id="learning_online_select" onkeyup="select_course()"
+                        placeholder="請輸入欲篩選代號" title="Type in a name">
+
+                    <table id="learning_online_table" class="table table-hover"
+                        style="min-height: 350px;text-align: left;">
+                        <thead>
+                            <tr class="header">
+                                <th scope="col">編號</th>
+                                <th scope="col">課程</th>
+                                <th scope="col">時數</th>
+                                <th scope="col">上課</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">A</td>
+                                <td>長者膳食營養保健(多族語言測試)</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">B</td>
+                                <td>長者口腔保健(僅漢語測試)</td>
+                                <td>4</td>
+                                <td><a href="./video/487563.t.mp4"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>長者口腔保健</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>長者口腔保健</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>長者口腔保健</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>長者口腔保健</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>長者口腔保健</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">D</td>
+                                <td>長者懷舊與頭腦保健</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">E</td>
+                                <td>肌力升級與運動保健</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">F</td>
+                                <td>其他</td>
+                                <td>4</td>
+                                <td><a href="#"><img src="./image/play.png "></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer_cpn"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

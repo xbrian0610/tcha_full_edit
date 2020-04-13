@@ -1,0 +1,19 @@
+#test_top_title {
+    margin-top: 20px;
+}
+
+#test_buttons {
+    width: 80%;
+    margin: auto;
+    color: #fff!important;
+    text-align: center;
+    min-height: calc(100vh - 380px);
+}
+
+.upload_button_set {
+    width: 130px;
+}
+
+.test_button_set {
+    width: 220px;
+}

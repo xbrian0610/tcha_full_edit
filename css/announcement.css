@@ -1,0 +1,33 @@
+#announcement_top_title {
+    margin-top: 20px;
+}
+
+#announcement_content {
+    width: 34%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.ann_pdf_a {
+    width: 50%;
+}
+
+.ann_pdf_a:hover {
+    text-decoration: none;
+}
+
+.ann_content_details {
+    margin: 20px;
+}
+
+#announcement_pdf_buttons {
+    position: relative;
+    width: 25%;
+    margin: auto;
+    min-height: 200px;
+}
+
+.ann_button_set {
+    position: absolute;
+    right: 0;
+}

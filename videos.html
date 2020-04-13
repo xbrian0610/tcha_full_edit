@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/videos.css">
+    <script src="./js/navbar.js"></script>
+    <script src="./js/footer.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
+
+</head>
+
+<body onload="DropPlay()">
+    <div id="index_top"></div>
+
+
+    <div class="card_area">
+
+        <div class="card">
+            <h5 class="card-header">線上自學</h5>
+            <div class="card-body">
+                <div id="play_video">
+                    <video id="video_show_place" width="100%" controls muted>
+                        <source src="./video/487563.t.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="videos_mp3">
+                    <span style="margin-top: 6px;">請選擇語言：</span>
+                    <select class="form-control" style="width: 80%;">
+                        <option class="language_set">阿美族語</option>
+                        <option class="language_set">泰雅族語</option>
+                        <option class="language_set">排灣族語</option>
+                        <option class="language_set">布農族語</option>
+                        <option class="language_set">卑南族語</option>
+                        <option class="language_set">魯凱族語</option>
+                        <option class="language_set">鄒族語</option>
+                        <option class="language_set">賽夏族語</option>
+                        <option class="language_set">雅美族語(達悟族)</option>
+                        <option class="language_set">邵族語</option>
+                        <option class="language_set">噶瑪蘭族語</option>
+                        <option class="language_set">太魯閣族語</option>
+                        <option class="language_set">撒奇萊雅族語</option>
+                        <option class="language_set">賽德克族語</option>
+                        <option class="language_set">拉阿魯哇族語</option>
+                        <option class="language_set">卡那卡那富族語</option>
+                    </select>
+                </div>
+
+                <script>
+                    var vid = document.getElementById("video_show_place");
+
+                    function DropPlay() {
+                        // vid.controls = false;
+                    }
+
+                    // function playVideo() {
+                    //     vid.play();
+                    // }
+                    // function pauseVideo() {
+                    //     vid.pause();
+                    // }
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer_cpn" style="margin-top: calc(100vh - 645px);"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

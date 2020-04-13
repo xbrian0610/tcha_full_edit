@@ -1,0 +1,6 @@
+.table_seperate {
+    width: 50%!important;
+    border-left: 1px rgb(202, 202, 202) solid;
+    border-right: 1px rgb(202, 202, 202) solid;
+    border-bottom: 1px rgb(202, 202, 202) solid;
+}

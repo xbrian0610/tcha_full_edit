@@ -1,0 +1,17 @@
+#course_top_title {
+    margin-top: 20px;
+}
+
+.course_table {
+    width: 60%!important;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.course_content_title_set {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle!important;
+}

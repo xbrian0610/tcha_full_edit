@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/admin_news.css">
+    <script src="./js/admin_navbar.js"></script>
+    <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>管理頁面_108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
+</head>
+
+<body>
+    <div id="admin_nav_sid_bar"></div>
+
+    <div id="admin_create_learning_online_table" class="admin_pages_table">
+        <div class="card admin_page_card" style="width: 100%;">
+            <div class="card-body">
+                <div id="admin_create_learning_online_title" class="admin_pages_table_title">
+                    <div class="admin_area_title">新增自學影片</div>
+                </div>
+                <form class="create_area">
+                    <div class="form-group">
+                        <label for="create_learning_online_type">課程編號：</label>
+                        <select class="form-control" id="create_learning_online_type">
+                            <option value="0">A長者膳食營養保健</option>
+                            <option value="1">B長者口腔保健</option>
+                            <option value="2">C慢性疾病與用藥安全</option>
+                            <option value="3">D長者懷舊與頭腦保健</option>
+                            <option value="4">E肌力升級與運動保健</option>
+                            <option value="5">F其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="create_learning_online_title">課程名稱：</label>
+                        <input type="text" class="form-control" id="create_news_title" placeholder="請輸入課程名稱">
+                    </div>
+                    <div class="form-group">
+                        <label for="create_news_title">總時數：</label>
+                        <input type="number" class="form-control" id="create_total_time" placeholder="請輸入總時數">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="create_news_title">影片位址：</label>
+                        <div>
+                            <input type="file" name="video_up" id="video_up" accept="video/*" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">送出</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+#learning_online_top_title {
+    margin-top: 20px;
+}
+
+#learning_table_navbar {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#learning_table_content {
+    width: 60%;
+    margin: auto;
+    min-height: calc(100vh - 380px);
+}
+
+.learning_button_set {
+    margin: 10px;
+    width: 183px;
+    transition-duration: 0.4s;
+    /* box-shadow: 4px 4px rgba(20%, 20%, 40%, 0.5); */
+}
+
+.learning_button_set:hover {
+    cursor: default;
+}
+
+#learning_online_select {
+    margin-left: 10px;
+    border-radius: 3px;
+}

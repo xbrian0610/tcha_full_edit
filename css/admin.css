@@ -1,0 +1,67 @@
+#admin_index_title {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 20px;
+    background-color: darkred;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#admin_side_bar {
+    margin-top: 69px;
+    position: fixed;
+    background-color: black;
+    width: 15%;
+    height: calc(100vh - 69px);
+    text-align: center;
+}
+
+.admin_pages_table {
+    padding-left: calc(15% + 20px);
+    padding-right: 20px;
+    width: 100%;
+    padding-top: 89px;
+    font-weight: bold;
+}
+
+.admin_pages_table_title {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.admin_area_title {
+    font-size: 20px;
+}
+
+.admin_area_button {
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.admin_side_bar_aset {
+    color: #ffffff;
+}
+
+.admin_side_bar_aset:hover {
+    color: #ffffff;
+}
+
+.admin_side_bar_content {
+    text-decoration: none;
+    padding: 20px 0 0 0;
+}
+
+.admin_page_card {
+    position: static!important;
+}
+
+.create_area {
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.admin_edit_button {
+    max-width: 60px;
+}

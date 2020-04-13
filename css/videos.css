@@ -1,0 +1,28 @@
+#videos_top_title {
+    margin-top: 20px;
+}
+
+#play_video {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#videos_mp3 {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+#videos_playNpause {
+    position: relative;
+    width: 10%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.videos_pause {
+    position: absolute;
+    right: 0;
+}

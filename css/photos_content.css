@@ -1,0 +1,41 @@
+/* #photos_content_top_title {
+    margin-top: 20px;
+}
+
+#photos_layout {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+
+#album_top_title {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.photo_set {
+    max-width: 28%;
+}
+
+.photo_set_2 {
+    position: absolute;
+    left: 36%;
+}
+
+.photo_set_3 {
+    position: absolute;
+    right: 0;
+}
+
+.modal-dialog {
+    max-width: 700px!important;
+} */
+
+.photo_contents_set {
+    padding: 12px;
+}

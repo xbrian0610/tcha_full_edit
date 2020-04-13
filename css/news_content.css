@@ -1,0 +1,14 @@
+#news_content {
+    width: 60%;
+    margin: auto;
+    min-height: 400px;
+}
+
+#news_content_top_title {
+    margin-top: 20px;
+}
+
+.new_content_title {
+    margin: 20px 0;
+    border-bottom: #343A40 1px solid;
+}

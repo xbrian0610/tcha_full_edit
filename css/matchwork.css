@@ -1,0 +1,60 @@
+#matchwork_top_title, #teachers_top_title {
+    margin-top: 12px;
+}
+
+#matchwork_content {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.matchwork_img_button {
+    max-width: 350px;
+}
+
+.matchwork_button_set {
+    width: 320px;
+    max-width: 350px;
+}
+
+.matchwork_apply_h6 {
+    line-height: 50px;
+}
+
+#teachers_content {
+    width: 60%;
+    margin: auto;
+    margin-top: 12px;
+    min-height: 180px;
+}
+
+#teacher_search {
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#teacher_table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#teacher_table th, #teacher_table td {
+    text-align: left;
+    padding: 12px;
+}
+
+#teacher_table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#teacher_table tr.header, #teacher_table tr:hover {
+    background-color: #f1f1f1;
+}
