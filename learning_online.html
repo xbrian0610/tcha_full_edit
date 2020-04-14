@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/learning_online.css">
     <script src="./js/navbar.js"></script>
     <script src="./js/footer.js"></script>
-    <script src="./js/learning_select.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body onload=changePage(1)>
     <div id="index_top"></div>
 
 
@@ -48,7 +48,7 @@
                     <input style="display: none;" type="text" id="learning_online_select" onkeyup="select_course()"
                         placeholder="請輸入欲篩選代號" title="Type in a name">
 
-                    <table id="learning_online_table" class="table table-hover"
+                    <table id="learning_online_table" class="table table-hover tab_pagi"
                         style="min-height: 350px;text-align: left;">
                         <thead>
                             <tr class="header">
@@ -59,74 +59,19 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <!-- <tr>
                                 <td scope="row">A</td>
                                 <td>長者膳食營養保健(多族語言測試)</td>
                                 <td>2</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">B</td>
-                                <td>長者口腔保健(僅漢語測試)</td>
-                                <td>4</td>
-                                <td><a href="./video/487563.t.mp4"><img src="./image/play.png "></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="row">C</td>
-                                <td>長者口腔保健</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">C</td>
-                                <td>長者口腔保健</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">C</td>
-                                <td>長者口腔保健</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">C</td>
-                                <td>長者口腔保健</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">C</td>
-                                <td>長者口腔保健</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">D</td>
-                                <td>長者懷舊與頭腦保健</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">E</td>
-                                <td>肌力升級與運動保健</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
-                            <tr>
-                                <td scope="row">F</td>
-                                <td>其他</td>
-                                <td>4</td>
-                                <td><a href="#"><img src="./image/play.png "></a></td>
-                            </tr>
+                            </tr>-->
                         </tbody>
                     </table>
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
+                                <a class="page-link" href="javascript:prevPage()" aria-label="Previous" id="btn_prev">
                                     <span aria-hidden="true">&laquo;</span>
                                     <span class="sr-only">Previous</span>
                                 </a>
@@ -135,7 +80,7 @@
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
+                                <a class="page-link" href="javascript:nextPage()" aria-label="Next" id="btn_next">
                                     <span aria-hidden="true">&raquo;</span>
                                     <span class="sr-only">Next</span>
                                 </a>
@@ -148,6 +93,11 @@
         </div>
     </div>
 
+    <div id="listingTable"></div>
+    <a href="javascript:prevPage()" id="btn_prev">Prev</a>
+    <a href="javascript:nextPage()" id="btn_next">Next</a>
+    page: <span id="page"></span>
+
 
     <footer id="footer_cpn"></footer>
 
@@ -157,6 +107,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="./js/learning_select.js"></script>
 </body>
 
 </html>
