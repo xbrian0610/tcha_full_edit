@@ -17,7 +17,7 @@ body {
 
 .top_area {
     position: relative;
-    min-height: 48px;
+    /* min-height: 48px; */
     /* max-width: 1000px; */
     padding: 0 12px;
     margin: auto;
@@ -27,7 +27,6 @@ body {
     font-size: 20px;
     color: #fff;
     line-height: 48px;
-    display: flex;
     position: relative;
 }
 
@@ -38,15 +37,17 @@ body {
 }
 
 .test_a_set:hover {
-    color: #fff;
+    color: rgb(255, 153, 153);
     text-decoration: none;
-    background-color: #343A40;
 }
 
 #navbar_right {
-    position: absolute;
-    right: 50px;
+    /* position: absolute; */
+    /* right: 50px; */
     line-height: 44px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .log_in_button {
@@ -55,13 +56,13 @@ body {
     top: 3px;
 }
 
-.top_bottom_set {
+/* .top_bottom_set {
     height: 20px;
     width: 100%;
     background-image: url("../image/top.png");
     background-repeat: repeat;
     background-size: 500px 20px;
-}
+} */
 
 .bottom_top_set {
     height: 30px;
@@ -138,7 +139,7 @@ body {
 }
 
 .carousel-indicators li {
-    background-color: #000!important;
+    /* background-color: #000!important; */
     height: 5px!important;
     border-radius: 11px;
 }
@@ -151,21 +152,12 @@ body {
     background-color: rgb(189, 110, 110);
 }
 
-.carousel-item {
-    /* background-color: rgb(189, 110, 110); */
-}
-
-.img_carousel_button {
-    /* background-color: rgb(72, 73, 73); */
-    border-radius: 5px;
-    z-index: 0!important;
-    width: 10%!important;
-}
-
 .carousel-inner {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+    /* max-width: 1000px; */
+    /* margin: auto; */
+    width: 100%;
+    max-height: 406px;
+    /* text-align: center; */
 }
 
 /* .index_carousel_set {
@@ -173,9 +165,9 @@ body {
 } */
 
 .index_carousel_img_set {
-    max-width: 610px;
-    width: 50%;
-    padding: 20px 12px;
+    /* max-width: 610px; */
+    width: 100%;
+    /* padding: 20px 12px; */
 }
 
 #video_top_title, #target_top_title {

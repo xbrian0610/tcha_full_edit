@@ -6,3 +6,7 @@
     width: 60%;
     margin: auto;
 }
+
+#news_table_content td {
+    border-top: none!important;
+}

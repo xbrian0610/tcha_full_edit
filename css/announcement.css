@@ -31,3 +31,17 @@
     position: absolute;
     right: 0;
 }
+
+.ann_con_tab_set {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.ann_con_tab_set td {
+    border: none!important;
+}
+
+.ann_con_tab_hei {
+    max-height: 320px;
+    overflow: auto;
+}

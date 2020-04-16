@@ -19,7 +19,7 @@
 
 </head>
 
-<body onload=changePage(1)>
+<body>
     <div id="index_top"></div>
 
 
@@ -48,8 +48,7 @@
                     <input style="display: none;" type="text" id="learning_online_select" onkeyup="select_course()"
                         placeholder="請輸入欲篩選代號" title="Type in a name">
 
-                    <table id="learning_online_table" class="table table-hover tab_pagi"
-                        style="min-height: 350px;text-align: left;">
+                    <table id="learning_online_table" class="table table-hover">
                         <thead>
                             <tr class="header">
                                 <th scope="col">編號</th>
@@ -58,17 +57,67 @@
                                 <th scope="col">上課</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- <tr>
+                        <tbody class="tab_pagi">
+                            <tr>
                                 <td scope="row">A</td>
                                 <td>長者膳食營養保健(多族語言測試)</td>
                                 <td>2</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
-                            </tr>-->
+                            </tr>
+                            <tr>
+                                <td scope="row">A</td>
+                                <td>長者膳食營養保健(多族語言測試)</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">A</td>
+                                <td>長者膳食營養保健(多族語言測試)</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">B</td>
+                                <td>長者膳食營養保健(多族語言測試)</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>慢性疾病與用藥安全</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">D</td>
+                                <td>長者懷舊與頭腦保健</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">E</td>
+                                <td>肌力升級與運動保健</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">F</td>
+                                <td>其他</td>
+                                <td>2</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
-                    <nav aria-label="Page navigation example">
+                    <!-- <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
                                 <a class="page-link" href="javascript:prevPage()" aria-label="Previous" id="btn_prev">
@@ -76,30 +125,24 @@
                                     <span class="sr-only">Previous</span>
                                 </a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="javascript:nextPage()" aria-label="Next" id="btn_next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                            <li class="page-item"><a class="page-link" href="javascript:changePage(1)">1</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:changePage(2)">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:changePage(3)">3</a></li>
+                            <a class="page-link" href="javascript:nextPage()" aria-label="Next" id="btn_next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> -->
 
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="listingTable"></div>
-    <a href="javascript:prevPage()" id="btn_prev">Prev</a>
-    <a href="javascript:nextPage()" id="btn_next">Next</a>
-    page: <span id="page"></span>
 
-
-    <footer id="footer_cpn"></footer>
+    <footer id="footer_cpn" style="margin-top:calc(100vh - 530px)"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
