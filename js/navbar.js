@@ -24,7 +24,7 @@ $(document).ready(function () {
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                 //登入前
-                    <div class="modal-content">
+                    <div class="modal-content" id="log_in_area">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">會員登入</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -54,13 +54,18 @@ $(document).ready(function () {
                         </div>
                     </div>
                     //登入後
-                    <!--<div class="modal-content">
+                    <div class="modal-content"  id="log_out_area">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary"
                                 onclick="location.href='./reset_password.html'">修改密碼</button>
-                            <button type="submit" class="btn btn-success">登出</button>
+                            <button type="submit" class="btn btn-success" onclick="log_out()">登出</button>
                         </div>
-                    </div>-->
+                    </div>
                 </div>
             </div>
         </div>
