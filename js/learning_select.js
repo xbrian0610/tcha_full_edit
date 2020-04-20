@@ -141,7 +141,34 @@
 //     return Math.ceil(objJson.length / records_per_page);
 // }
 
+const API = "";
 
+function getLearnOnline(callback) {
+    $.ajax({
+        url: `${API}s`,
+        type: "GET",
+        dataType: "json",
+        cache: false,
+        success(res) {
+            if (callback) {
+                callback();
+            }
+            for (let i = 0; i < res.length; i += 1) {
+                const content = `
+                <tr id = LearnOnline${i + 1}>
+                    <td>${res[i].tag}</td>
+                    <td>${res[i].coursename}</td>
+                    <td>${res[i].time}</td>
+                    <td><a href="#">${res[i].video}</a></td>
+                </tr>`;
+                $("#tab_pagi").append(content);
+            }
+        },
+        error(err) {
+            console.log(err);
+        }
+    });
+}
 
 function SetValueToInput(VideoType) {
     var input, filter, table, tr, td, i, txtValue;

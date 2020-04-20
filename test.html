@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
+    <script src='./js/jquery.min.js'></script>
+
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/test.css">
     <script src="./js/navbar.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/upload_file.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -76,14 +76,16 @@
             <div class="card-body">
                 <div style="margin: 0 0 12px 0;">
                     <form action="" id="up_ppt" enctype="multipart/form-data">
-                        <input type="file" name="userFile" id="mid" accept=".pptx, .ppt" />
-                        <input class="btn btn-success upload_button_set" type="submit" value="上傳(ppt檔)">
+                        <input type="file" name="userFile" id="for_ppt" accept=".pptx, .ppt" />
+                        <input class="btn btn-success upload_button_set" type="button" onclick="uploadPpt()"
+                            value="上傳(ppt檔)">
                     </form>
                 </div>
                 <div>
                     <form action="" id="up_doc" enctype="multipart/form-data">
-                        <input type="file" name="userFile" id="mid" accept=".doc, .docx" />
-                        <input class="btn btn-success upload_button_set" type="submit" value="上傳(word檔)">
+                        <input type="file" name="userFile" id="for_doc" accept=".doc, .docx" />
+                        <input class="btn btn-success upload_button_set" type="button" onclick="uploadDoc()"
+                            value="上傳(word檔)">
                     </form>
                 </div>
             </div>

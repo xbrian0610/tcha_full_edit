@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
+    <script src='./js/jquery.min.js'></script>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/revalid_email.css">
     <script src="./js/navbar.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/forget_pwd.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -47,16 +46,15 @@
     <div class="card_area">
 
         <div class="card">
-            <h5 class="card-header">重新設定密碼</h5>
+            <h5 class="card-header">忘記密碼</h5>
             <div class="card-body">
                 <div>
                     <form>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="請輸入您的信箱">
+                            <input type="email" class="form-control" id="email" placeholder="請輸入您的信箱">
                         </div>
                         <div style="text-align: center;">
-                            <button type="button" class="btn btn-success"
-                                onclick="location.href='./index.html'">送出</button>
+                            <button type="button" class="btn btn-success" onclick="forget_pwd()">送出</button>
                         </div>
                     </form>
                 </div>

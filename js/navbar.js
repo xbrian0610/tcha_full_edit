@@ -47,7 +47,7 @@ $(document).ready(function () {
                             </form>
                             <a style="color:#000" href="./revalid_email.html">沒收到驗證信嗎？</a>
                             <button type="button" class="btn btn-secondary"
-                                onclick="location.href='./forger_pwd.html'">忘記密碼</button>
+                                onclick="location.href='./forget_pwd.html'">忘記密碼</button>
                             <button type="submit" class="btn btn-success">登入</button>
                             <button type="button" class="btn btn-primary"
                                 onclick="location.href='./register.html'">註冊</button>
