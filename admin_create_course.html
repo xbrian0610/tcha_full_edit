@@ -43,6 +43,14 @@
                         <label for="create_course_type">課程類型：</label>
                         <input type="text" class="form-control" id="create_course_type" placeholder="請輸入課程類型">
                     </div>
+                    <div class="form-group">
+                        <label for="create_course_type">報名情形：</label>
+                        <select class="form-control" id="create_course_status">
+                            <option value="0">未開放</option>
+                            <option value="1">報名中</option>
+                            <option value="2">已結束</option>
+                        </select>
+                    </div>
                     <button type="button" class=" btn btn-primary"
                         onclick="location.href='./admin_course.html'">送出</button>
                 </form>

@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/admin_news_content.js"></script>
+    <!-- <script src="./js/admin_news_load.js"></script> -->
 
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 
@@ -20,19 +21,19 @@
 
 </head>
 
-<body>
+<body onload="hidden_edit()">
     <div id="admin_nav_sid_bar"></div>
 
-    <div id="admin_news_table" class="admin_pages_table">
-        <div class="card admin_page_card" style="width: 100%;">
+    <div id="admin_news_list" class="admin_pages_table">
+        <div id="admin_newsId_content" class="card admin_page_card" style="width: 100%;">
             <div class="card-body">
                 <div id="admin_news_content_table_title" class="admin_pages_table_title">
-                    <div class="admin_area_title">最新消息</div>
+                    <div class="admin_area_title" id="target_tit"></div>
                     <button class="admin_area_button" onclick="edit_content()">編輯內容</button>
                 </div>
                 <div id="news_content">
-                    <div class="news_details">
-                        <p><strong>各位夥伴您好：</strong></p>
+                    <div class="news_details" id="news_details">
+                        <!-- <p><strong>各位夥伴您好：</strong></p>
                         <p><strong>國民健康署邀請您一同加入防疫推廣的行列，敬請多加協助宣導下列資訊，讓更多人掌握資訊，一起戰勝疫情</strong><strong>!!!</strong></p>
 
                         <ul>
@@ -49,7 +50,6 @@
                                     href="https://www.youtube.com/watch?v=OBGoU_WhVGQ%20"><strong>https://www.youtube.com/watch?v=OBGoU_WhVGQ
                                     </strong></a></li>
                         </ul>
-
                         <p><strong>若有相關問題請撥</strong><strong>1922</strong><strong>防疫專線</strong></p>
 
                         <p><strong>國民健康署</strong><strong> </strong><strong>關心您的健康</strong></p>
@@ -60,41 +60,41 @@
                         <a target="_blank" href="./pdf/test.pdf" download="原民會xxx文件">
                             pdf下載test
                         </a>
+                    </div> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="admin_news_table" class="admin_pages_table">
-        <div class="card admin_page_card" style="width: 100%;">
-            <div class="card-body">
-                <div id="admin_create_news_title" class="admin_pages_table_title">
-                    <div class="admin_area_title">新增消息</div>
+        <div id="admin_newsEditId_content" class="admin_pages_table">
+            <div class="card admin_page_card" style="width: 100%;">
+                <div class="card-body">
+                    <div id="admin_create_news_title" class="admin_pages_table_title">
+                        <div class="admin_area_title">新增消息</div>
+                    </div>
+                    <form class="create_area" onsubmit="bk_news_content(event)">
+                        <div class="form-group">
+                            <label for="create_news_title">消息標題：</label>
+                            <input type="text" class="form-control" id="create_news_title" placeholder="請輸入消息標題">
+                        </div>
+                        <div class="form-group">
+                            <label for="create_news_content">消息內容：</label>
+                            <textarea name="editor_news_content" id="editor_news_content"></textarea>
+                            <script>CKEDITOR.replace("editor_news_content");</script>
+                        </div>
+                        <button type="submit" class="btn btn-primary">送出</button>
+                    </form>
                 </div>
-                <form class="create_area">
-                    <div class="form-group">
-                        <label for="create_news_title">消息標題：</label>
-                        <input type="text" class="form-control" id="create_news_title" placeholder="請輸入消息標題">
-                    </div>
-                    <div class="form-group">
-                        <label for="create_news_content">消息內容：</label>
-                        <textarea name="editor_news_content" id="editor_news_content"></textarea>
-                        <script>CKEDITOR.replace("editor_news_content");</script>
-                    </div>
-                    <button type="button" class="btn btn-primary"
-                        onclick="location.href='./admin_news.html'">送出</button>
-                </form>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>

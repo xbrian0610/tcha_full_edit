@@ -1,25 +1,15 @@
 function handle_submit(e) {
+
     e.preventDefault();
 
-    var userInfo = {};
-    const form = e.target.elements;
-    for (var i = 0; i < form.length; i += 1) {
-        const element = form[i];
-        userInfo = {
-            ...userInfo,
-            [element.name]: element.value
-        }
-    }
-    console.log(userInfo)
+    $('#submit_btn').css("display", "none");
+    $('#loading_btn').css("display", "block");
+    $('#loading_btn').css("margin", "auto");
 
-    $('#exampleModal_email_deliver').modal('show');
-}
-
-function memberRegister() {
     // console.log(gender);
     var username = $("#username").val();
-    var email = $("#email").val();
-    var password = $("#password").val();
+    var email = $("#registerEmail").val();
+    var password = $("#registerPassword").val();
     var ensure_pwd = $("#ensure_pwd").val();
     var gender = $("#gender").val();
     var category = $("#category").val();
@@ -28,60 +18,80 @@ function memberRegister() {
     var address = $("#address").val();
     var phone = $("#phone").val();
 
-    var API = "https://localhost:5001/api/member/Register";
+    var API = "http://192.168.43.56:5002/api/member/Register";
 
-    // for (var i = 0, length = radios.length; i < length; i++) {
-    //     if (radios[i].checked) {
-    //         // 弹出选中值
-    //         // alert(radios[i].value);
-    //         var gender = radios[i].value;
-    //         // 选中后退出循环
-    //         break;
-    //     }
-    // }
-    //mailgun
-    if (password !== ensure_pwd) {
+    if (password.length = 8 || password.length > 12) {
+        alert("密碼請輸入8~12碼!!");
+        $('#submit_btn').css("display", "block");
+        $('#loading_btn').css("margin", "auto");
+        $('#submit_btn').css("margin", "auto");
+        $('#loading_btn').css("display", "none");
+        return;
+    } else if (password !== ensure_pwd) {
         alert("密碼不相符!!");
+        $('#submit_btn').css("display", "block");
+        $('#loading_btn').css("margin", "auto");
+        $('#submit_btn').css("margin", "auto");
+        $('#loading_btn').css("display", "none");
+        return;
     } else if (email === "" || password === "" || username === "" || service === "" || position === "" || address === "" || phone === "") {
-        alert("資料不完整 請再檢查一下!!")
+        alert("資料不完整 請再檢查一下!!");
+        $('#submit_btn').css("display", "block");
+        $('#loading_btn').css("margin", "auto");
+        $('#submit_btn').css("margin", "auto");
+        $('#loading_btn').css("display", "none");
+        return;
     }
-    else {
-        console.log({
-            username, email, password, ensure_pwd, gender, category, service, position, address, phone
-        })
-    }
+    console.log({
+        Name: username,
+        Email: email,
+        Password: password,
+        Gender: gender,
+        Race: category,
+        Service_Unit: service,
+        Position: position,
+        Address: address,
+        Phone: phone,
+    });
     $.ajax({
         url: API,
         type: "POST",
-        dataType: "json",
-        data: {
-            username: username,
-            email: email,
-            password: password,
-            gender: gender,
-            category: category,
-            service: service,
-            position: position,
-            address: address,
-            phone: phone,
+        headers: {
+            'Content-Type': 'application/json',
         },
+        // dataType: "json",
+        data: JSON.stringify({
+            Name: username,
+            Email: email,
+            Password: password,
+            Gender: gender,
+            Race: category,
+            Service_Unit: service,
+            Position: position,
+            Address: address,
+            Phone: phone,
+        }),
         cache: false,
         success: function (res) {
-            // console.log(res);
-            if (username === "" || email === "" || password === "" || gender === "" || category === "" || service === "" || position === "" || address === "" || phone === "") {
-                alert("資料不完整 請再檢查一下!!");
-            } else {
-                console.log(gender + ',' + name + ',' + race + ',' + unit + ',' + post + ',' + address + ',' + tel + ',' + email + ',' + password);
-                window.location.assign(`http://localhost:3000/email_deliver.html?email=${email}`);
-            }
+            console.log(res);
+            // window.location.assign(`http://192.168.43.56:3000/email_deliver.html?email=${email}`);
+            $('#exampleModal_email_deliver').modal('show');
         },
         error: function (err) {
-            console.log(err);
-            // if (err.responseJSON.message) {
-            //     alert(err.responseJSON.message);
-            //     return;
-            // }
-            alert('系統錯誤');
+            // console.log("此信箱已註冊過!!");
+            // alert("此信箱已註冊過!!");
+            alert(err.responseText);
+            $('#submit_btn').css("display", "block");
+            $('#submit_btn').css("margin", "auto");
+            $('#loading_btn').css("margin", "auto");
+            $('#loading_btn').css("display", "none");
+
+            console.log(err.responseText);
         }
     });
-};
+    return;
+
+    // e.preventDefault();
+
+}
+

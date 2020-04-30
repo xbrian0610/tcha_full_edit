@@ -1,0 +1,7 @@
+.news_title_hover {
+    color: darkred!important;
+}
+
+.news_title_hover:hover {
+    cursor: pointer;
+}

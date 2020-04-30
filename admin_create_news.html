@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/admin_news.css">
     <script src="./js/admin_navbar.js"></script>
+    <script src="./js/admin_new_news.js"></script>
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 
     <meta charset="UTF-8">
@@ -17,7 +18,8 @@
     <title>管理頁面_108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
 </head>
 
-<body>
+<body onload="checkAuth()">
+    <script src="./js/admin_login.js"></script>
     <div id="admin_nav_sid_bar"></div>
 
     <div id="admin_news_table" class="admin_pages_table">
@@ -26,18 +28,17 @@
                 <div id="admin_create_news_title" class="admin_pages_table_title">
                     <div class="admin_area_title">新增消息</div>
                 </div>
-                <form class="create_area">
+                <form class="create_area" onsubmit="create_news(event)">
                     <div class="form-group">
                         <label for="create_news_title">消息標題：</label>
                         <input type="text" class="form-control" id="create_news_title" placeholder="請輸入消息標題">
                     </div>
                     <div class="form-group">
                         <label for="create_news_content">消息內容：</label>
-                        <textarea name="editor1"></textarea>
-                        <script>CKEDITOR.replace("editor1");</script>
+                        <textarea name="news_creater_content"></textarea>
+                        <script>CKEDITOR.replace("news_creater_content");</script>
                     </div>
-                    <button type="button" class="btn btn-primary"
-                        onclick="location.href='./admin_news.html'">送出</button>
+                    <button type="submit" class="btn btn-primary">送出</button>
                 </form>
             </div>
         </div>

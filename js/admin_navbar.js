@@ -5,7 +5,7 @@ $(document).ready(function () {
     </div>
 
     <div id="admin_side_bar">
-        <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin.html">首頁</a></div>
+        <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./index.html">回前台首頁</a></div>
         <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin_members.html">會員專區</a>
         </div>
         <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin_news.html">最新消息</a></div>

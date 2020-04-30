@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/revalid_email.css">
     <script src="./js/navbar.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/log_in.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/email_redeliver.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -49,14 +52,31 @@
         <div class="card">
             <h5 class="card-header">重發驗證信</h5>
             <div class="card-body">
-                <form>
+                <form onsubmit="resend(event)">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="請輸入您的信箱">
+                        <input type="email" class="form-control" id="resendEmail" placeholder="請輸入您的信箱" required>
                     </div>
                     <div style="text-align: center;">
-                        <button type="button" class="btn btn-success" onclick="location.href='./index.html'">送出</button>
+                        <button type="submit" class="btn btn-success">送出</button>
                     </div>
                 </form>
+                <div class="modal fade" id="resend_email" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel2">請至信箱收取驗證信!!</h5>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success"
+                                    onclick="location.href='./index.html'">回到首頁登入
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

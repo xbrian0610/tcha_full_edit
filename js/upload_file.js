@@ -1,69 +1,83 @@
 function uploadPpt() {
+
+    // e.preventDefault();
+
     var for_ppt = $("#for_ppt").prop('files');
-    var API = "http://localhost:3000/file/";
+    var API = "http://192.168.43.56:5002/api/fileupload";
     var form_data = new FormData();
 
-    var file = document.getElementById("mid");
+    var file = document.getElementById("for_ppt");
+
     if (file.length < 1) {
         alert('請選擇PPT檔案');
         return false;
     }
+    console.log(for_ppt)
     for (let i = 0; i < for_ppt.length; i++) {
-        form_data.append('files', for_ppt[i]);
+        form_data.append('UploadFile', for_ppt[i]);
     }
-    console.log(form_data)
-
-    console.log(API);
+    form_data.append('Member_Id', localStorage.id);
     $.ajax({
         url: API,
         type: "POST",
-        contentType: false, //required
         processData: false, // required
+        contentType: false, //requiredc
+        headers: {
+            // 'Content-Type': 'multipart/form-data',
+            'Authorization': 'Bearer ' + localStorage.token
+        },
         data: form_data,
         success: function (res) {
             alert("上傳檔案成功");
-            document.getElementById("mid").value = "";
+            document.getElementById("for_ppt").value = "";
         },
         error: function (err) {
-            if (err.responseJSON.message) {
-                alert(err.responseJSON.message);
-                return;
-            }
-            alert('系統錯誤');
+
+            console.log(err);
+            console.log(form_data);
+            alert("請選擇檔案");
         }
     })
-} function uploadDoc() {
+}
+function uploadDoc() {
+
+    // e.preventDefault();
+
     var for_doc = $("#for_doc").prop('files');
-    var API = "http://localhost:3000/file/";
+    var API = "http://192.168.43.56:5002/api/fileupload";
     var form_data = new FormData();
 
     var file = document.getElementById("for_doc");
+
     if (file.length < 1) {
         alert('請選擇PPT檔案');
         return false;
     }
-    for (let i = 0; i < for_doc.length; i++) {
-        form_data.append('files', for_doc[i]);
-    }
-    console.log(form_data)
+    console.log(for_doc);
 
-    console.log(API);
+    for (let i = 0; i < for_doc.length; i++) {
+        form_data.append('UploadFile', for_doc[i]);
+    }
+    form_data.append('Member_Id', localStorage.id);
     $.ajax({
         url: API,
         type: "POST",
-        contentType: false, //required
         processData: false, // required
+        contentType: false, //requiredc
+        headers: {
+            // 'Content-Type': 'multipart/form-data',
+            'Authorization': 'Bearer ' + localStorage.token
+        },
         data: form_data,
         success: function (res) {
             alert("上傳檔案成功");
-            document.getElementById("mid").value = "";
+            document.getElementById("for_doc").value = "";
         },
         error: function (err) {
-            if (err.responseJSON.message) {
-                alert(err.responseJSON.message);
-                return;
-            }
-            alert('系統錯誤');
+
+            console.log(err);
+            console.log(form_data);
+            alert("請選擇檔案");
         }
     })
 }

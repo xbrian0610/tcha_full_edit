@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/news_content.css">
     <script src="./js/navbar.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/log_in.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/news_content.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -16,16 +19,16 @@
 
 </head>
 
-<body>
+<body onload="get_target_news_F()">
     <div id="index_top"></div>
 
     <div class="card_area">
 
         <div class="card">
-            <h5 class="card-header">最新消息</h5>
-            <div class="card-body" style="text-align: left;">
-                <div class="news_details">
-                    <p><strong>各位夥伴您好：</strong></p>
+            <h5 class="card-header" id="news_title_f"></h5>
+            <div class="card-body" style="text-align: left;min-height: 478px;">
+                <div class="news_details" id="news_content_p">
+                    <!-- <p><strong>各位夥伴您好：</strong></p>
                     <p><strong>國民健康署邀請您一同加入防疫推廣的行列，敬請多加協助宣導下列資訊，讓更多人掌握資訊，一起戰勝疫情</strong><strong>!!!</strong></p>
 
                     <ul>
@@ -47,19 +50,14 @@
 
                     <p><strong>國民健康署</strong><strong> </strong><strong>關心您的健康</strong></p>
 
-                </div>
-                <div>
-                    檔案下載：
-                    <a target="_blank" href="./pdf/test.pdf" download="原民會xxx文件">
-                        pdf下載test
-                    </a>
+                    <p><strong>檔案下載：<a href="./pdf/test.pdf">pdf下載test</a></strong></p> -->
                 </div>
             </div>
         </div>
     </div>
 
 
-    <footer id="footer_cpn" style="margin-top: calc(100vh - 575px);"></footer>
+    <footer id="footer_cpn"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

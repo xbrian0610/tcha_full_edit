@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/admin_files.css">
     <script src="./js/admin_navbar.js"></script>
+    <script src="./js/admin_files.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -16,7 +17,7 @@
 
 </head>
 
-<body>
+<body onload="get_files_doc();get_files_ppt();">
     <div id="admin_nav_sid_bar"></div>
 
     <div id="admin_files_table" class="admin_pages_table">
@@ -37,8 +38,8 @@
                                 <th scope="col">E-mail</th>
                             </tr>
                         </thead>
-                        <tbody id="files_table_content">
-                            <tr>
+                        <tbody id="files_table_content_ppt">
+                            <!-- <tr>
                                 <th>1</th>
                                 <td><a href="./pdf/test.pdf" target="_blank" download="原民會xxx文件">
                                         test.pdf
@@ -55,7 +56,7 @@
                                 <td>2020/02/13</td>
                                 <td>潘O仁</td>
                                 <td>123@123.com</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                     <table class="table table-hover table_seperate">
@@ -68,8 +69,8 @@
                                 <th scope="col">E-mail</th>
                             </tr>
                         </thead>
-                        <tbody id="files_table_content">
-                            <tr>
+                        <tbody id="files_table_content_doc">
+                            <!-- <tr>
                                 <th>1</th>
                                 <td><a href="./pdf/test.pdf" target="_blank" download="原民會xxx文件">
                                         test.pdf
@@ -86,7 +87,7 @@
                                 <td>2020/02/13</td>
                                 <td>潘O仁</td>
                                 <td>123@123.com</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/revalid_email.css">
     <script src="./js/navbar.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/log_in.js"></script>
     <script src="./js/footer.js"></script>
     <script src="./js/forget_pwd.js"></script>
     <meta charset="UTF-8">
@@ -49,12 +51,12 @@
             <h5 class="card-header">忘記密碼</h5>
             <div class="card-body">
                 <div>
-                    <form>
+                    <form onsubmit="emailToForgetPwd(event)">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="請輸入您的信箱">
+                            <input type="email" class="form-control" id="forget_email" placeholder="請輸入您的信箱" required>
                         </div>
                         <div style="text-align: center;">
-                            <button type="button" class="btn btn-success" onclick="forget_pwd()">送出</button>
+                            <button type="submit" class="btn btn-success">送出</button>
                         </div>
                     </form>
                 </div>

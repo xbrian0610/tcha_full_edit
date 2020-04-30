@@ -5,6 +5,7 @@
     <script src='./js/jquery.min.js'></script>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/admin_logIn.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,17 +15,25 @@
 
 </head>
 
-<body style="background-color: rgb(94, 1, 1);">
+<body>
+    <script src="./js/admin_login.js"></script>
     <div id="admin_logIn_area">
-        <label id="admin_logIn_area_title">108年預防及延緩失能身體活動<br />場域型方案推展試辦計畫</label>
-        <div class="form-group">
-            <input type="email" class="form-control" id="admin_email" aria-describedby="emailHelp"
-                placeholder="請輸入您的Email">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" id="admin_password" placeholder="請輸入您的密碼">
-        </div>
-        <button type="button" class="btn btn-success admin_button" onclick="location.href='./admin.html'">登入</button>
+
+        <form id="log_in_form" onsubmit="AdminLogin(event)">
+
+            <label id="admin_logIn_area_title">108年預防及延緩失能身體活動<br />場域型方案推展試辦計畫</label>
+
+            <div class="form-group">
+                <input type="email" class="form-control" id="admin_email" aria-describedby="emailHelp"
+                    placeholder="請輸入您的Email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="admin_password" placeholder="請輸入您的密碼">
+            </div>
+            <button style="width: 100%;" type="submit" class="btn btn-success">登入</button>
+        </form>
+
+
     </div>
 </body>
 

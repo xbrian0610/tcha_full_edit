@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/test.css">
     <script src="./js/navbar.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/log_in.js"></script>
     <script src="./js/upload_file.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,25 +22,6 @@
 
 <body>
     <div id="index_top"></div>
-
-    <!-- <div id="test_top_title">
-        <h5 class="area_title">測驗專區</h5>
-    </div> -->
-
-    <!-- <div id="test_buttons">
-        <div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8Pz9a11vRWVh9DBS2b_biOMjD9LvSr09hDnGcHVhotMdUeQ/viewform"
-                target="_blank">
-                <button id="test1" type="button" class="btn btn-warning test_button_set">測驗專區</button>
-            </a>
-
-        </div>
-        <div>
-            <a href="#">
-                <button type="button" class="btn btn-warning test_button_set">文健站長者測驗</button>
-            </a>
-        </div>
-    </div> -->
 
     <div class="card_area">
 
@@ -74,18 +57,17 @@
         <div class="card">
             <h5 class="card-header">檔案繳交區</h5>
             <div class="card-body">
-                <div style="margin: 0 0 12px 0;">
+                <!-- <div style="margin: 0 0 12px 0;">
                     <form action="" id="up_ppt" enctype="multipart/form-data">
                         <input type="file" name="userFile" id="for_ppt" accept=".pptx, .ppt" />
                         <input class="btn btn-success upload_button_set" type="button" onclick="uploadPpt()"
                             value="上傳(ppt檔)">
                     </form>
-                </div>
+                </div> -->
                 <div>
                     <form action="" id="up_doc" enctype="multipart/form-data">
                         <input type="file" name="userFile" id="for_doc" accept=".doc, .docx" />
-                        <input class="btn btn-success upload_button_set" type="button" onclick="uploadDoc()"
-                            value="上傳(word檔)">
+                        <input class="btn btn-success upload_button_set" type="button" onclick="uploadDoc()" value="上傳">
                     </form>
                 </div>
             </div>

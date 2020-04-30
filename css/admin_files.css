@@ -3,3 +3,11 @@
     border-right: 1px rgb(202, 202, 202) solid;
     border-bottom: 1px rgb(202, 202, 202) solid;
 }
+
+.files_hover {
+    color: darkred!important;
+}
+
+.files_hover:hover {
+    cursor: pointer;
+}

@@ -1,30 +1,33 @@
-function forget_pwd() {
-    var email = $("#email").val();
-    var API = "http://localhost:3000/auth/forgot/mail";
-    console.log(API);
-    if (email === "") {
-        alert("請輸入email喔!");
-        return;
-    }
+function emailToForgetPwd(e) {
+    e.preventDefault();
+
+    var email = $("#forget_email").val();
+
+    var API = "http://192.168.43.56:5002/api/member/ForgetPassword?Email=" + email;
+
+    console.log(email);
     $.ajax({
         url: API,
-        type: "POST",
-        dateType: "json",
-        data: {
-            email: email,
+        type: "GET",
+        // dateType: "json",
+        headers: {
+            'Content-Type': 'application/json',
         },
         cache: false,
         success: function (res) {
+            alert(res);
             console.log(res);
             console.log("12345");
-            document.cookie = "token=" + res.token + ";";
-            window.location.assign("http://localhost:3000/reset_password.html");
+            // document.cookie = "token=" + res.token + ";";
+            window.location.assign("http://192.168.43.56:5500/index.html");
         },
         error: function (err) {
-            if (err.responseJSON.message) {
-                alert(err.responseJSON.message);
-                return;
-            }
+            // if (err.responseJSON.message) {
+            //     alert(err.responseJSON.message);
+            //     return;
+            // }
+            console.log(email);
+            console.log(err);
             alert('系統錯誤');
         }
     });

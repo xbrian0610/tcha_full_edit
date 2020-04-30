@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/learning_online.css">
     <script src="./js/navbar.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/log_in.js"></script>
     <script src="./js/footer.js"></script>
 
     <meta charset="UTF-8">
@@ -26,7 +28,7 @@
 
         <div class="card">
             <h5 class="card-header">線上自學</h5>
-            <div class="card-body">
+            <div class="card-body" style="height: 500px;overflow: auto;">
                 <div>
                     <button type="button" class="btn learning_button_set btn-outline-danger active"
                         onclick="SetValueToInput(0)">全部</button>
@@ -52,64 +54,116 @@
                             <tr class="header">
                                 <th scope="col">編號</th>
                                 <th scope="col">課程</th>
-                                <th scope="col">時數</th>
+                                <!-- <th scope="col">時數</th> -->
                                 <th scope="col">上課</th>
                             </tr>
                         </thead>
                         <tbody id="tab_pagi">
                             <tr>
                                 <td scope="row">A</td>
-                                <td>長者膳食營養保健(多族語言測試)</td>
-                                <td>2</td>
+                                <td>長者膳食營養保健(太魯閣族語)</td>
                                 <td><a href="./video/487563.t.mp4" target="_blank"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td scope="row">A</td>
-                                <td>長者膳食營養保健(多族語言測試)</td>
-                                <td>2</td>
+                                <td>長者膳食營養保健(阿美族語)</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td scope="row">A</td>
-                                <td>長者膳食營養保健(多族語言測試)</td>
-                                <td>2</td>
+                                <td>長者膳食營養保健(漢語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">A</td>
+                                <td>長者膳食營養保健(魯凱族語)</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td scope="row">B</td>
-                                <td>長者膳食營養保健(多族語言測試)</td>
-                                <td>2</td>
+                                <td>長者膳食營養保健(邵族語)</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td scope="row">C</td>
-                                <td>慢性疾病與用藥安全</td>
-                                <td>2</td>
+                                <td>慢性疾病與用藥安全(卡那卡那族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>慢性疾病與用藥安全(泰雅族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>慢性疾病與用藥安全(撒奇萊雅族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">C</td>
+                                <td>慢性疾病與用藥安全(漢語))</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td scope="row">D</td>
-                                <td>長者懷舊與頭腦保健</td>
-                                <td>2</td>
+                                <td>長者懷舊與頭腦保健(達悟族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">D</td>
+                                <td>長者懷舊與頭腦保健(卑南族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">D</td>
+                                <td>長者懷舊與頭腦保健(拉阿魯哇族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">D</td>
+                                <td>長者懷舊與頭腦保健(噶瑪蘭族語)</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td scope="row">E</td>
-                                <td>肌力升級與運動保健</td>
-                                <td>2</td>
+                                <td>肌力升級與運動保健(鄒族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">E</td>
+                                <td>肌力升級與運動保健(達悟族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">E</td>
+                                <td>肌力升級與運動保健(卑南族語)</td>
+                                <td><a href="./videos.html"><img src="./image/play.png "></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">E</td>
+                                <td>肌力升級與運動保健(太魯閣族語)</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td scope="row">F</td>
                                 <td>其他</td>
-                                <td>2</td>
                                 <td><a href="./videos.html"><img src="./image/play.png "></a>
                                 </td>
                             </tr>
@@ -141,7 +195,7 @@
     </div>
 
 
-    <footer id="footer_cpn" style="margin-top:calc(100vh - 530px)"></footer>
+    <footer id="footer_cpn"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

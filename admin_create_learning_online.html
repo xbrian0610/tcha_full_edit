@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/admin_news.css">
     <script src="./js/admin_navbar.js"></script>
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+    <script src="./js/admin_learning_online.js"></script>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +28,10 @@
                 <div id="admin_create_learning_online_title" class="admin_pages_table_title">
                     <div class="admin_area_title">新增自學影片</div>
                 </div>
-                <form class="create_area">
+                <form class="create_area" onsubmit="create_learning_online(event)">
                     <div class="form-group">
                         <label for="create_learning_online_type">課程編號：</label>
-                        <select class="form-control" id="create_learning_online_type">
+                        <select class="form-control" id="create_video_type">
                             <option value="0">A長者膳食營養保健</option>
                             <option value="1">B長者口腔保健</option>
                             <option value="2">C慢性疾病與用藥安全</option>
@@ -40,13 +42,8 @@
                     </div>
                     <div class="form-group">
                         <label for="create_learning_online_title">課程名稱：</label>
-                        <input type="text" class="form-control" id="create_news_title" placeholder="請輸入課程名稱">
+                        <input type="text" class="form-control" id="create_video_title" placeholder="請輸入課程名稱">
                     </div>
-                    <div class="form-group">
-                        <label for="create_news_title">影片長度：</label>
-                        <input type="text" class="form-control" id="create_total_time" placeholder="請輸入總長度">
-                    </div>
-
                     <div class="form-group">
                         <label for="create_news_title">影片位址：</label>
                         <div>

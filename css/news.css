@@ -10,3 +10,11 @@
 #news_table_content td {
     border-top: none!important;
 }
+
+.news_title_hover_f {
+    color: darkred!important;
+}
+
+.news_title_hover_f:hover {
+    cursor: pointer;
+}

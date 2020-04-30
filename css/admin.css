@@ -25,6 +25,10 @@
     font-weight: bold;
 }
 
+#admin_newsEditId_content {
+    padding: 0;
+}
+
 .admin_pages_table_title {
     padding-bottom: 20px;
     position: relative;

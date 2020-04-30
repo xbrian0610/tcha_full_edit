@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/admin_members.css">
     <script src="./js/admin_navbar.js"></script>
+    <script src="./js/admin_member.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -16,7 +18,9 @@
 
 </head>
 
-<body>
+<body onload="manage_Member();checkAuth()">
+    <script src="./js/admin_login.js"></script>
+
     <div id="admin_nav_sid_bar"></div>
 
     <div id="admin_members_table" class="admin_pages_table">
@@ -38,8 +42,8 @@
                             <th scope="col">電子信箱</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="admin_mem">
+                        <!-- <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
@@ -68,7 +72,7 @@
                             <td>@mdo</td>
                             <td>@mdo</td>
                             <td>@mdo</td>
-                        </tr>
+                        </tr> -->
 
                     </tbody>
                 </table>

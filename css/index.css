@@ -54,6 +54,7 @@ body {
     position: absolute;
     right: 0;
     top: 3px;
+    display: flex!important;
 }
 
 /* .top_bottom_set {
@@ -282,7 +283,7 @@ body {
 }
 
 .container_footer_set {
-    width: 1000px!important;
+    /* width: 1000px!important; */
     max-width: 1000px;
     margin: auto;
 }
