@@ -25,7 +25,7 @@ function hidden_edit() {
         success: function (res) {
             console.log(res);
 
-            // alert("幹")
+            // alert("#")
             // window.location.assign(`http://192.168.43.56:5500/admin_news_content.html?id=${target_id}`);
             // alert("success"); href="./admin_news_content.html"
             const tit_content = `
@@ -89,7 +89,7 @@ function edit_content() {
 
 
 
-            // alert("幹")
+            // alert("#")
             // window.location.assign(`http://192.168.43.56:5500/admin_news_content.html?id=${target_id}`);
             // alert("success"); href="./admin_news_content.html"
 
@@ -158,7 +158,7 @@ function bk_news_content(e) {
         success: function (res) {
             console.log(res);
 
-            // alert("幹")
+            // alert("#")
             // alert("success"); href="./admin_news_content.html"
 
             // const edit_title = document.getElementById('create_news_title');

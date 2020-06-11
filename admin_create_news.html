@@ -36,7 +36,10 @@
                     <div class="form-group">
                         <label for="create_news_content">消息內容：</label>
                         <textarea name="news_creater_content"></textarea>
-                        <script>CKEDITOR.replace("news_creater_content");</script>
+                        <script>
+                            CKEDITOR.replace("news_creater_content");
+                            config.removeButtons = '#cke_33_label'
+                        </script>
                     </div>
                     <button type="submit" class="btn btn-primary">送出</button>
                 </form>

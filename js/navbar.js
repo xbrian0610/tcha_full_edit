@@ -6,21 +6,23 @@ $(document).ready(function () {
             <div>108年預防及延緩失能身體活動場域型方案推展試辦計畫</div>
             <div id="navbar_right">
                 <a class="test_a_set" href="./index.html">首頁</a>
+                <a class="test_a_set" href="./intro.html">學會簡介</a>
                 <a class="test_a_set" href="./news.html">最新消息</a>
-                <a class="test_a_set" href="./announcement.html">公告資訊</a>
+                <!--<a class="test_a_set" href="./announcement.html">公告資訊</a>-->
+                <a class="test_a_set" href="./matchwork.html">資訊暨媒合</a>
                 <a class="test_a_set" href="./course.html">培訓課程</a>
-                <a class="test_a_set" href="./learning_online.html">線上自學</a>
-                <a class="test_a_set" href="./matchwork.html">媒合作業</a>
-                <a class="test_a_set" href="./photos.html">活動花絮</a>
-                <a class="test_a_set" href="./test.html">測驗/檔案繳交區</a>
+                <!--<a class="test_a_set" href="./learning_online.html">線上自學</a>-->
+                <!-- <a class="test_a_set" href="./photos.html">活動花絮</a> -->
+                <a class="test_a_set" href="./media_elder.html">影音教材</a>
+                <a class="test_a_set" href="./test.html">檔案繳交區</a>
             </div>
+            
             <button type="button" class="btn log_in_button" data-toggle="modal" data-target="#exampleModal">
                 <img class="user_icon" src="./image/log_in_icon.png" alt="">
                 <div style="color:#fff">${localStorage.name === undefined ? "" : localStorage.name}</div>
             </button>
             
         </div>
-
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">

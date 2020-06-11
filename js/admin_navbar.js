@@ -9,10 +9,10 @@ $(document).ready(function () {
         <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin_members.html">會員專區</a>
         </div>
         <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin_news.html">最新消息</a></div>
-        <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin_course.html">培訓課程</a></div>
-        <div class="admin_side_bar_content"><a class="admin_side_bar_aset"
+        <!-- <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin_course.html">培訓課程</a></div> -->
+        <!--<div class="admin_side_bar_content"><a class="admin_side_bar_aset"
                 href="./admin_learning_online.html">線上自學</a>
-        </div>
+        </div>-->
         <div class="admin_side_bar_content"><a class="admin_side_bar_aset" href="./admin_files.html">繳交檔案區</a></div>
     </div>
     `;

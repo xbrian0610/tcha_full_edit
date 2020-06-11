@@ -13,15 +13,11 @@ $(document).ready(function () {
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 footer_content">
                     <a href="https://health99.hpa.gov.tw/default.aspx" target="_blank"><img class="footer_img_set"
-                            src="./image/ninenine-removebg-preview.png" alt=""></a>
+                            src="./image/footer_333.png" alt=""></a>
                 </div>
                 <div class="col-sm-6 col-md-3 col-lg-1 footer_content">
                     <a href="https://www.facebook.com/TCHCA1070224/" target="_blank"><img class="footer_img_set"
                             src="./image/FB.png" alt=""></a>
-                </div>
-                <div class="col-sm-6 col-md-3 col-lg-1 footer_content">
-                    <a href="https://instagram.com/tchca6688?igshid=w3a32cth9qdp" target="_blank"><img
-                            class="footer_img_set" src="./image/ig.png" alt=""></a>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ function load_news() {
                 <tr id = news${i + 1}>
                     <td style="display:none">${res[i].news_Id}</td>
                     <td ><a class="news_title_hover" onclick="get_content(${res[i].news_Id})">${res[i].news_Title}</a></td>
-                    <td>${res[i].createTime}</td>
+                    <td>${res[i].createTime.substr(0, 10)}</td>
                     
                 </tr>`;
                 $("#news_table_content").append(content);
@@ -37,7 +37,7 @@ function load_news() {
 function get_content(target_id) {
     var API = "http://192.168.43.56:5002/api/news/GetData?id=" + target_id;
 
-    console.log(target_id + "幹");
+    console.log(target_id + "#");
     $.ajax({
         url: API,
         type: "GET",
@@ -48,7 +48,7 @@ function get_content(target_id) {
         success: function (res) {
             console.log(res);
 
-            // alert("幹")
+            // alert("#")
             window.location.assign(`http://192.168.43.56:5500/admin_news_content.html?id=${target_id}`);
             // alert("success"); href="./admin_news_content.html"
 

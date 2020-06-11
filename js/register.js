@@ -20,7 +20,7 @@ function handle_submit(e) {
 
     var API = "http://192.168.43.56:5002/api/member/Register";
 
-    if (password.length = 8 || password.length > 12) {
+    if (password.length < 8 || password.length > 12) {
         alert("密碼請輸入8~12碼!!");
         $('#submit_btn').css("display", "block");
         $('#loading_btn').css("margin", "auto");

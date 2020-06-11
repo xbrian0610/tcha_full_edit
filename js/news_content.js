@@ -19,7 +19,7 @@ function get_target_news_F() {
         success: function (res) {
             console.log(res);
 
-            // alert("幹")
+            // alert("#")
             // window.location.assign(`http://192.168.43.56:5500/admin_news_content.html?id=${target_id}`);
             // alert("success"); href="./admin_news_content.html"
             const tit_content = `

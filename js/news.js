@@ -1,5 +1,7 @@
 function getNews() {
-
+    if (localStorage.length == "" || localStorage.email == "") {
+        alert("請登入會員才能查看完整資訊!!");
+    }
     var API = "http://192.168.43.56:5002/api/news/GetDataList";
 
     $.ajax({
@@ -14,8 +16,8 @@ function getNews() {
             for (let i = 0; i < res.length; i += 1) {
                 const content = `
                 <tr id = news${i + 1}>
-                    <td>${res[i].createTime.substr(0, 10)}</td>
-                    <td><a class="news_title_hover_f" onclick="get_content_front(${res[i].news_Id})">${res[i].news_Title}</a></td>
+                <td><a class="news_title_hover_f" onclick="get_content_front(${res[i].news_Id})">${res[i].news_Title}</a></td>
+                <td>${res[i].createTime.substr(0, 10)}</td>
                 </tr>`;
                 $("#news_table_content").append(content);
             }
@@ -38,7 +40,7 @@ function get_content_front(target_id) {
         success: function (res) {
             console.log(res);
 
-            // alert("幹")
+            // alert("#")
             window.location.assign(`http://192.168.43.56:5500/news_content.html?id=${target_id}`);
             // alert("success"); href="./admin_news_content.html"
 

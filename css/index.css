@@ -111,7 +111,10 @@ body {
 
 .card-header {
     padding: 12px!important;
+    padding-top: 18px!important;
+    color: yellow;
     font-weight: bold;
+    background-image: url(../image/empty.png);
 }
 
 .card-body {

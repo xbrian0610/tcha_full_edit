@@ -14,6 +14,10 @@ $(document).ready(function () {
         $('#log_in_area').css("display", "none");
         $('#log_out_area').css("display", "block");
     }
+    if (localStorage.length == 0) {
+        $('#log_in_area').css("display", "block");
+        $('#log_out_area').css("display", "none");
+    }
 
     if (localStorage.isAdmin !== "true") {
         $('#admin_mid').css("display", "none");

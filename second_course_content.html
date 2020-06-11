@@ -5,6 +5,7 @@
     <script src='./js/jquery.min.js'></script>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/course.css">
+    <link rel="stylesheet" href="./css/second_course_content.css">
     <script src="./js/navbar.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/log_in.js"></script>
@@ -26,84 +27,104 @@
         <div class="card">
             <h5 class="card-header">第二階段-培訓課程-課程舉辦資訊</h5>
             <div class="card-body">
-                <table class="table table-hover" style="text-align: left;">
+                <div style="position: relative;">
+                    <a href="https://www.surveycake.com/s/KwRRy" target="_blank">
+                        <button type="button" class="btn btn-warning test_button_set"
+                            style="margin-bottom: 12px;">種子教師-第二階段前/後測
+                        </button>
+                    </a>
+                    <div style="position: absolute;right: 0;top: 0;">
+                        <button type="button" class="btn btn-info" onclick="location.href='./course.html'">返回</button>
+                    </div>
+                </div>
+
+                <table class="table table-bordered" style="text-align: left;">
                     <thead>
                         <tr>
                             <th class="course_content_title_set" scope="col">課程日期</th>
-                            <th class="course_content_title_set" scope="col">課程名稱</th>
+                            <th class="course_content_title_set col_color" scope="col">課程名稱</th>
+                            <th class="course_content_title_set" scope="col">課程內容</th>
                             <th class="course_content_title_set" scope="col">課程地點</th>
-                            <th class="course_content_title_set" scope="col">課程類型</th>
-                            <th class="course_content_title_set" scope="col">報名情形</th>
+                            <th class="course_content_title_set" scope="col">課程講義</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>109/02/05</th>
-                            <td>線上課程<br />前測
-                            </td>
+                            <td>109/02/05</td>
+                            <td class="col_color">前測、課程說明</td>
+                            <td>1. 線上課程原則及實施方向<br />2. 主題心智圖設計範例<br />3. 12週課程與單週課程設計之重點<br />4. 各組別的分享主題與順序</td>
                             <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>前測、課程說明</td>
+                            <td class="downLoad_btn">
+                                <a href="#" target="_blank" download="?">
+                                    <button class="btn btn-success">下載</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>109/02/07</td>
+                            <td class="col_color">心智圖</td>
+                            <td>1. 依據主題畫出心智圖<br />2. 依據心智圖所延伸的12週課程概念</td>
+                            <td>社團法人臺灣跨文化健康照護學會會議室</td>
                             <td>已結束</td>
                         </tr>
                         <tr>
-                            <th>109/02/07</th>
-                            <td>線上課程<br />心智圖
-                            </td>
+                            <td>109/02/12</td>
+                            <td class="col_color">肌力與運動保健</td>
+                            <td>※跳的不一樣-肌力與運動保健方案<br />1. 12週課程與單週課程設計之規劃<br />&emsp;(1)
+                                涵蓋暖身、運動及熱身時期(必要)。<br />&emsp;(2)需要族群的文化意義與動作及族 歌的帶動語運用(必要)。<br />2. 報告(含錄影 3 分鐘)。</td>
                             <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>心智圖</td>
                             <td>已結束</td>
                         </tr>
                         <tr>
-                            <th>109/02/12</th>
-                            <td>線上課程<br />GOGO活力文化教案之分享
+                            <td>109/02/14</td>
+                            <td class="col_color">長者口腔保健</td>
+                            <td>※長者口腔保健文化照顧方案<br />1.
+                                12週課程與單週課程設計之規劃<br />&emsp;(1)長者口腔基本生理、口腔健康評估、潔牙技巧與示範口腔照顧。<br />&emsp;(2)文化族群相關潔牙經驗分享、自創族語健口操之發展(必要課程)<br />2.
+                                報告(含錄影3分鐘)。
                             </td>
                             <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>肌力與運動保健</td>
                             <td>已結束</td>
                         </tr>
                         <tr>
-                            <th>109/02/14</th>
-                            <td>線上課程<br />3E文化教案之分享
-                            </td>
+                            <td>109/02/19</td>
+                            <td class="col_color">長者族群營養膳食</td>
+                            <td>※長者族群營養膳食文化方案<br />1.
+                                12週課程與單週課程設計之規劃<br />&emsp;(1)系統性長者的營養與健康(肌少症及衰弱症的評估(運用族語設計)(必要)。<br />&emsp;(2)部落美食與六大營養之相對應、族人的餐盤設計、健康共餐共食之參考
+                                (必要)。<br />&emsp;(3)文化族群相關飲食經驗分享、自創族人餐盤圖或拍照等。<br />3.報告(含錄影或照片3分鐘)。</td>
                             <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>長者口腔保健</td>
                             <td>已結束</td>
                         </tr>
                         <tr>
-                            <th>109/02/19</th>
-                            <td>線上課程<br />3E文化教案之分享
+                            <td>109/02/21</td>
+                            <td class="col_color">慢性病與用藥安全</td>
+                            <td>※慢性病與用藥安全之文化照顧方案<br />1.
+                                12週課程與單週課程設計之規劃<br />&emsp;(1)介紹慢性疾病(如：高血壓、糖尿病、痛風等)相關簡要疾病概念(勿太複雜、一週一個慢性病、要問老人相關疾病的問題)(必要)<br />&emsp;(2)部落老人的用藥問題(需具有文化敏感度)(必要)<br />&emsp;(3)設計部落老人用藥口訣、設計老人用藥藥盒，具有文化特色方案(必要)。<br />3.
+                                報告(含錄影、實體或照片3分鐘)。
                             </td>
                             <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>長者族群營養膳食</td>
                             <td>已結束</td>
                         </tr>
                         <tr>
-                            <th>109/02/21</th>
-                            <td>線上課程<br />3E文化教案之分享
-                            </td>
+                            <td>109/02/24</td>
+                            <td class="col_color">頭腦保健與心靈健康</td>
+                            <td>※頭腦保健與心靈健康文化照顧方案<br />1.
+                                12週課程與單週課程設計之規劃<br />&emsp;(1)介紹長者心理的情緒特徵(運用概念跟部落老人聊聊)、常見的老人心靈議題(必要)<br />&emsp;(2)設計具有文化特性的照顧方案(懷舊相片、神話/故事、歌曲、桌遊、地圖手工藝)(需具有文化敏感度)(設計2-3種活動;
+                                必要)<br />3. 報告(含錄影、實體或照片3分鐘)。</td>
                             <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>慢性病與用藥安全</td>
                             <td>已結束</td>
                         </tr>
                         <tr>
-                            <th>109/02/24</th>
-                            <td>線上課程<br />復古懷舊、創意靈活文化教案
+                            <td>109/02/27</td>
+                            <td class="col_color">後測</td>
+                            <td>1. 頒獎-四大方案具有創意、完整及文化特色者，頒發獎金 2000 元。<br />2. 線上測試-自我效能及文化照顧能力。<br />3. 說明第三階段實作課程的重點。
                             </td>
                             <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>頭腦保健與心靈健康</td>
-                            <td>已結束</td>
-                        </tr>
-                        <tr>
-                            <th>109/02/27</th>
-                            <td>線上課程<br />後測
-                            </td>
-                            <td>社團法人臺灣跨文化健康照護學會會議室</td>
-                            <td>後測</td>
                             <td>已結束</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
         </div>
     </div>
 

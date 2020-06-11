@@ -20,7 +20,7 @@ function get_files_doc() {
                             ${res[i].fileName}
                         </a>
                     </td>
-                    <td>${res[i].createTime}</td>
+                    <td>${res[i].createTime.substr(0, 10)}</td>
                     <!--<td>
                         <a onclick="download_File('${res[i].id}')" id="a_file${i}"  download="${res[i].original_name}">
                         ${res[i].original_name}
@@ -66,7 +66,7 @@ function get_files_ppt() {
                             ${res[i].fileName}
                         </a>
                     </td>
-                    <td>${res[i].createTime}</td>
+                    <td>${res[i].createTime.substr(0, 10)}</td>
                     <td>${res[i].members.name} </td>
                     <td>${res[i].members.email}</td>
 

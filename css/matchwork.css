@@ -58,3 +58,15 @@
 #teacher_table tr.header, #teacher_table tr:hover {
     background-color: #f1f1f1;
 }
+
+.table_color_f {
+    color: #fff;
+}
+
+.table_color_0 {
+    color: #000;
+}
+
+.table_color_f:hover, .table_color_0:hover {
+    color: #fff;
+}

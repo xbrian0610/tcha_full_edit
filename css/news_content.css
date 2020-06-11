@@ -12,3 +12,7 @@
     margin: 20px 0;
     border-bottom: #343A40 1px solid;
 }
+
+#news_content_p {
+    position: relative;
+}
