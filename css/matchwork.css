@@ -70,3 +70,9 @@
 .table_color_f:hover, .table_color_0:hover {
     color: #fff;
 }
+
+.area_set {
+    font-weight: bold;
+    width: 5%;
+    font-size: 24px;
+}

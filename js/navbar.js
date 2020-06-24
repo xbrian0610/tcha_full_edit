@@ -3,7 +3,7 @@ $(document).ready(function () {
     const content = `
     <div class="top_area">
         <div class="top_title">
-            <div>108年預防及延緩失能身體活動場域型方案推展試辦計畫</div>
+            <div class="top_title_set"><img style="max-width:400px;margin-top:6px;" src="./image/logo.jpg"></div>
             <div id="navbar_right">
                 <a class="test_a_set" href="./index.html">首頁</a>
                 <a class="test_a_set" href="./intro.html">學會簡介</a>
@@ -16,12 +16,16 @@ $(document).ready(function () {
                 <a class="test_a_set" href="./media_elder.html">影音教材</a>
                 <a class="test_a_set" href="./test.html">檔案繳交區</a>
             </div>
-            
             <button type="button" class="btn log_in_button" data-toggle="modal" data-target="#exampleModal">
                 <img class="user_icon" src="./image/log_in_icon.png" alt="">
-                <div style="color:#fff">${localStorage.name === undefined ? "" : localStorage.name}</div>
+                <div style="color:#000;font-size:20px">${localStorage.name === undefined ? "" : localStorage.name}</div>
             </button>
-            
+            <a href="./pdf/test.pdf" target="_blank" download="test">
+                <button type="button" class="btn instruc_btn">
+                    <img class="user_icon" src="./image/search.png" alt="">
+                    <div style="color:#000;font-size:20px">使用說明</div>
+                </button>
+            </a>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">

@@ -17,3 +17,8 @@
 .test_button_set {
     width: 220px;
 }
+
+.t_i_test {
+    text-indent: 2em;
+    margin: 0;
+}

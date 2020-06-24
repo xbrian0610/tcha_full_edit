@@ -5,3 +5,28 @@
 .downLoad_btn {
     text-align: center;
 }
+
+.td_int {
+    text-indent: -1em;
+    padding-left: 1em;
+    margin: 0
+}
+
+.td_brackets {
+    text-indent: -1.2em;
+    padding-left: 2.2em;
+    margin: 0
+}
+
+.d_b_set {
+    margin: 6px;
+    width: 140px;
+}
+
+.snd_col_set {
+    width: 10%;
+}
+
+.dl_btn_center {
+    text-align: center;
+}

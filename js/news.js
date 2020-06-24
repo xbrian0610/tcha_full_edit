@@ -1,6 +1,7 @@
 function getNews() {
     if (localStorage.length == "" || localStorage.email == "") {
         alert("請登入會員才能查看完整資訊!!");
+        window.location.href = '../index.html';
     }
     var API = "http://192.168.43.56:5002/api/news/GetDataList";
 

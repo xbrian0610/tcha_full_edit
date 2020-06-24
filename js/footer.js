@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const content = `
-        <div class="bottom_top_set"></div>
+        <!--<div class="bottom_top_set"></div>-->
         <div class="container container_footer_set">
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-4 footer_content">
@@ -15,7 +15,7 @@ $(document).ready(function () {
                     <a href="https://health99.hpa.gov.tw/default.aspx" target="_blank"><img class="footer_img_set"
                             src="./image/footer_333.png" alt=""></a>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-1 footer_content">
+                <div class="col-sm-6 col-md-3 col-lg-2 footer_content">
                     <a href="https://www.facebook.com/TCHCA1070224/" target="_blank"><img class="footer_img_set"
                             src="./image/FB.png" alt=""></a>
                 </div>

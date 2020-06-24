@@ -6,10 +6,10 @@
 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/test.css">
+    <script src="./js/log_in.js"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/footer.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/log_in.js"></script>
     <script src="./js/upload_file.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="only_memb()">
     <div id="index_top"></div>
 
     <div class="card_area">
@@ -37,19 +37,26 @@
                 </div> -->
                 <div>
                     <form action="" id="up_doc" enctype="multipart/form-data">
-                        <input type="file" name="userFile" id="for_doc" accept=".doc, .docx" />
+                        <input type="file" name="userFile" id="for_doc" />
                         <input class="btn btn-success upload_button_set" type="button" onclick="uploadDoc()" value="上傳">
                     </form>
                 </div>
-                <div>
-                    xxxxxxxx提示字待補xxxxxxxx
+                <div style="text-align: left;margin: auto;width: 30%;font-size: 18px;margin-top: 12px;">
+                    <p style="margin: 0;">一、教學影音檔(3-5分鐘)</p>
+                    <p class="t_i_test">※可使用「VUE」APP錄製</p>
+                    <p class="t_i_test">※至少上傳3部</p>
+                    <p style="margin: 0;">二、教案內容</p>
+                    <p class="t_i_test">1.PPT檔(必繳)</p>
+                    <p class="t_i_test">2.照片(每次上課至少5張)</p>
+                    <p class="t_i_test">3.其它檔案(Word、PDF)</p>
+                    <p style="margin: 0;">三、課程評值(諮詢紀錄單)</p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <footer id="footer_cpn" style="margin-top: 50vh;">
+    <footer id="footer_cpn">
 
     </footer>
 

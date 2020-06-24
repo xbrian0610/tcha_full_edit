@@ -10,6 +10,7 @@
 
 .course_content_title_set {
     white-space: nowrap;
+    text-align: center;
 }
 
 .table td {
@@ -22,4 +23,5 @@
     max-width: 200px;
     max-height: 200px;
     margin: 20px;
+    font-size: 20px!important;
 }
