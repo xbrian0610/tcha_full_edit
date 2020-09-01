@@ -3,29 +3,35 @@ $(document).ready(function () {
     const content = `
     <div class="top_area">
         <div class="top_title">
-            <div class="top_title_set"><img style="max-width:400px;margin-top:6px;" src="./image/logo.jpg"></div>
+            <!--<div class="top_title_set"><img style="max-width:400px;margin-top:6px;" src="./image/logo.jpg"></div>-->
             <div id="navbar_right">
-                <a class="test_a_set" href="./index.html">首頁</a>
-                <a class="test_a_set" href="./intro.html">學會簡介</a>
-                <a class="test_a_set" href="./news.html">最新消息</a>
-                <!--<a class="test_a_set" href="./announcement.html">公告資訊</a>-->
-                <a class="test_a_set" href="./matchwork.html">資訊暨媒合</a>
-                <a class="test_a_set" href="./course.html">培訓課程</a>
-                <!--<a class="test_a_set" href="./learning_online.html">線上自學</a>-->
-                <!-- <a class="test_a_set" href="./photos.html">活動花絮</a> -->
-                <a class="test_a_set" href="./media_elder.html">影音教材</a>
-                <a class="test_a_set" href="./test.html">檔案繳交區</a>
+                <div style="width:80%;margin:auto;">
+                    <a class="test_a_set index_subtitle_font" href="./intro.html">關於我們</a>
+                    <!--<a class="test_a_set index_subtitle_font" href="./news.html">最新消息</a>-->
+                    <a class="test_a_set index_subtitle_font" href="./matchwork.html">資訊媒合</a>
+                    <a class="test_a_set index_subtitle_font" href="./course.html">培訓課程</a>
+                    <!--<a class="test_a_set index_subtitle_font" href="./announcement.html">公告資訊</a>-->
+                    <a class="test_a_set index_subtitle_font" href="./index.html"><img src="./image/home.png" alt="" /></a>
+                    
+                    <!--<a class="test_a_set index_subtitle_font" href="./learning_online.html">線上自學</a>-->
+                    <!-- <a class="test_a_set index_subtitle_font" href="./photos.html">活動花絮</a> -->
+                    <a class="test_a_set index_subtitle_font" href="./media_elder.html">影音教材</a>
+                    <a class="test_a_set index_subtitle_font" href="./test.html">檔案繳交</a>
+                    <a class="test_a_set index_subtitle_font" href="./rel_href.html">相關連結</a>
+                </div>
             </div>
             <button type="button" class="btn log_in_button" data-toggle="modal" data-target="#exampleModal">
-                <img class="user_icon" src="./image/log_in_icon.png" alt="">
-                <div style="color:#000;font-size:20px">${localStorage.name === undefined ? "" : localStorage.name}</div>
+                <div id="regis_login_hint" class="index_subtitle_font" style="color:#fff;font-size:20px;font-weight:bold">登入/註冊</div>
+                <div style="color:#fff;font-size:20px;" class="index_subtitle_font">${
+        localStorage.name === undefined ? "" : localStorage.name
+        }</div>
             </button>
-            <a href="./pdf/test.pdf" target="_blank" download="test">
+            <!--<a href="./pdf/test.pdf" target="_blank" download="test">
                 <button type="button" class="btn instruc_btn">
                     <img class="user_icon" src="./image/search.png" alt="">
                     <div style="color:#000;font-size:20px">使用說明</div>
                 </button>
-            </a>
+            </a>-->
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -80,7 +86,7 @@ $(document).ready(function () {
         </div>
     </div>
         
-    <div class="top_bottom_set"></div>
+    <!--<div class="top_bottom_set"></div>-->
     `;
     $("#index_top").append(content);
-})
+});

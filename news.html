@@ -2,176 +2,285 @@
 <html lang="en">
 
 <head>
-    <script src='./js/jquery.min.js'></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/news.css">
-    <script src="./js/navbar.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/log_in.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="./js/news.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/news.css" />
+  <script src="./js/navbar.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/log_in.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/news.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
-    <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
-
-
+  <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
 </head>
 
 <body onload="getNews()">
-    <div id="index_top"></div>
-
-
-    <div class="card_area">
-
-        <div class="card">
-            <h5 class="card-header">最新消息</h5>
-            <div class="card-body">
-                <table class="table table-hover" id="news_table_content">
-                    <!-- <thead>
-                        <tr>
-                            <th scope="col">發布日期</th>
-                            <th scope="col">名稱</th>
-                        </tr>
-                    </thead> -->
-                    <tbody>
-                        <!-- <tr>
-                            <td><a href="./news_content.html">國民健康署邀請您一同加入防疫推廣的行列，一起戰勝疫情!!!</a></td>
-                            <td>2020/03/24</td>
-                        </tr>
-                        <tr>
-                            <td>國民健康署邀請您一同加入防疫推廣的行列，一起戰勝疫情!!!</td>
-                            <td>2019/12/11</td>
-                        </tr> -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
+  <div style="position: relative;">
+    <img class="index_bg_img" src="./image/news_bg_img.png" alt="" />
+    <div id="index_top" style="position: absolute; top: 50px;"></div>
+    <div style="
+          font-size: 48px;
+          position: absolute;
+          top: 240px;
+          text-align: center;
+          width: 100%;
+          color: #fff;
+        " class="index_subtitle_font">
+      最 新 消 息
     </div>
-    <div class="card_area">
-
-        <div class="card">
-            <h5 class="card-header">活動花絮</h5>
-            <!-- <div class="card-body" style="display:flex;">
-                <div class="gallery">
-                    <div class="card card_album_set" style="width: 18rem;">
-                        <a href="./photo_contents.html">
-                            <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">相簿名稱</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="card card_album_set" style="width: 18rem;">
-                        <a href="./photo_contents.html">
-                            <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">相簿名稱</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="card card_album_set" style="width: 18rem;">
-                        <a href="./photo_contents.html">
-                            <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">相簿名稱</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="container card-body">
-                <div class="row" style="text-align: center;">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="gallery">
-                            <div class="card card_album_set" style="width: 18rem;margin: auto;">
-                                <a href="./photo_contents.html">
-                                    <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">相簿名稱</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="gallery">
-                            <div class="card card_album_set" style="width: 18rem;margin: auto;">
-                                <a href="./photo_contents.html">
-                                    <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">相簿名稱</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="gallery">
-                            <div class="card card_album_set" style="width: 18rem;margin: auto;">
-                                <a href="./photo_contents.html">
-                                    <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text">相簿名稱</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="card-body" style="display:flex;">
-                <div class="gallery">
-                    <div class="card card_album_set" style="width: 18rem;">
-                        <a href="./photo_contents.html">
-                            <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">相簿名稱</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="card card_album_set" style="width: 18rem;">
-                        <a href="./photo_contents.html">
-                            <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">相簿名稱</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <div class="card card_album_set" style="width: 18rem;">
-                        <a href="./photo_contents.html">
-                            <img src="./image/20200118_200215_0002.jpg" alt="" width="100%">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">相簿名稱</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
+    <div style="
+          font-size: 40px;
+          position: absolute;
+          top: 320px;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+        " class="index_subtitle_font">
+      Latest News
     </div>
+  </div>
 
+  <div style="margin-top: -8px;">
+    <img style="width: 100%;" src="./image/split_img.png" alt="" />
+  </div>
 
-    <footer id="footer_cpn"></footer>
+  <div style="width: 70%; margin: auto; padding-top: 60px;">
+    <div class="global_title_set">近期活動</div>
+    <div class="global_title_"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <div style="margin-top: 48px;">
+      <div class="news_list_area">
+        <div style="width: 90%; display: flex; margin: auto;">
+          <table class="table table-hover" id="news_table_content">
+            <!-- <thead>
+                <tr>
+                  <th scope="col">發布日期</th>
+                  <th scope="col">名稱</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="./news_content.html"
+                      >國民健康署邀請您一同加入防疫推廣的行列，一起戰勝疫情!!!</a
+                    >
+                  </td>
+                  <td>2020/03/24</td>
+                </tr>
+                <tr>
+                  <td>
+                    國民健康署邀請您一同加入防疫推廣的行列，一起戰勝疫情!!!
+                  </td>
+                  <td>2019/12/11</td>
+                </tr>
+              </tbody> -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="width: 70%; margin: auto; padding-top: 60px;">
+    <div class="global_title_set">活動花絮</div>
+    <div class="global_title_"></div>
+
+    <div style="margin-top: 48px;">
+      <div class="container card-body">
+        <div class="row" style="text-align: center;">
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_album_set" style="width: 18rem; margin: auto;">
+              <a href="https://drive.google.com/drive/folders/1u0WBJnQ9qGb6iEKeRaQYyjfB4qqy2Y94?usp=sharing" target="">
+                <img src="./image/20200118_200215_0002.jpg" alt="" width="100%" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="card card_album_set" style="width: 18rem; margin: auto;">
+              <a href="./photo_contents.html">
+                <img src="./image/20200118_200215_0002.jpg" alt="" width="100%" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="card_area">
+      <div class="card">
+        <h5 class="card-header">活動花絮</h5>
+        <div class="card-body" style="display: flex;">
+          <div class="gallery">
+            <div class="card card_album_set" style="width: 18rem;">
+              <a href="./photo_contents.html">
+                <img
+                  src="./image/20200118_200215_0002.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="card card_album_set" style="width: 18rem;">
+              <a href="./photo_contents.html">
+                <img
+                  src="./image/20200118_200215_0002.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="card card_album_set" style="width: 18rem;">
+              <a href="./photo_contents.html">
+                <img
+                  src="./image/20200118_200215_0002.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container card-body">
+          <div class="row" style="text-align: center;">
+            <div class="col-md-4 col-sm-12">
+              <div class="gallery">
+                <div
+                  class="card card_album_set"
+                  style="width: 18rem; margin: auto;"
+                >
+                  <a href="./photo_contents.html">
+                    <img
+                      src="./image/20200118_200215_0002.jpg"
+                      alt=""
+                      width="100%"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">相簿名稱</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="gallery">
+                <div
+                  class="card card_album_set"
+                  style="width: 18rem; margin: auto;"
+                >
+                  <a href="./photo_contents.html">
+                    <img
+                      src="./image/20200118_200215_0002.jpg"
+                      alt=""
+                      width="100%"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">相簿名稱</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="gallery">
+                <div
+                  class="card card_album_set"
+                  style="width: 18rem; margin: auto;"
+                >
+                  <a href="./photo_contents.html">
+                    <img
+                      src="./image/20200118_200215_0002.jpg"
+                      alt=""
+                      width="100%"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">相簿名稱</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body" style="display: flex;">
+          <div class="gallery">
+            <div class="card card_album_set" style="width: 18rem;">
+              <a href="./photo_contents.html">
+                <img
+                  src="./image/20200118_200215_0002.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="card card_album_set" style="width: 18rem;">
+              <a href="./photo_contents.html">
+                <img
+                  src="./image/20200118_200215_0002.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="card card_album_set" style="width: 18rem;">
+              <a href="./photo_contents.html">
+                <img
+                  src="./image/20200118_200215_0002.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+              <div class="card-body">
+                <p class="card-text">相簿名稱</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <footer id="footer_cpn"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

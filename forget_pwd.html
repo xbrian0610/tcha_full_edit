@@ -2,27 +2,68 @@
 <html lang="en">
 
 <head>
-    <script src='./js/jquery.min.js'></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/revalid_email.css">
-    <script src="./js/navbar.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/log_in.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="./js/forget_pwd.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/revalid_email.css" />
+  <script src="./js/navbar.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/log_in.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/forget_pwd.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
-    <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
-
+  <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
 </head>
 
 <body>
-    <div id="index_top"></div>
+  <div style="position: relative;">
+    <img class="index_bg_img" src="./image/register_img.png" alt="" />
+    <div id="index_top" style="position: absolute; top: 50px;"></div>
+    <div style="
+          font-size: 48px;
+          position: absolute;
+          top: 240px;
+          text-align: center;
+          width: 100%;
+          color: #fff;
+        " class="index_subtitle_font">
+      忘 記 密 碼
+    </div>
+    <div style="
+          font-size: 40px;
+          position: absolute;
+          top: 320px;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+        " class="index_subtitle_font">
+      Forget password
+    </div>
+  </div>
 
-    <!-- <div style="min-height: 400px;">
+  <div style="margin-top: -8px;">
+    <img style="width: 100%;" src="./image/split_img.png" alt="" />
+  </div>
+
+  <div style="margin-top: 48px; margin-bottom: 48px;">
+    <div class="media_elder_area">
+      <div style="width: 90%; margin: auto; padding: 48px 0;">
+        <form onsubmit="emailToForgetPwd(event)">
+          <div class="form-group">
+            <input type="email" class="form-control" id="forget_email" placeholder="請輸入您的信箱，我們將傳送新密碼至此" required />
+          </div>
+          <div style="text-align: center;">
+            <button type="submit" class="btn btn-success">送出</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div style="min-height: 400px;">
         <div id="revalid_pwd_top_title">
             <h5 class="area_title">重新設定密碼</h5>
         </div>
@@ -45,35 +86,38 @@
         </div>
     </div> -->
 
-    <div class="card_area">
-
-        <div class="card">
-            <h5 class="card-header">忘記密碼</h5>
-            <div class="card-body">
-                <div>
-                    <form onsubmit="emailToForgetPwd(event)">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="forget_email" placeholder="請輸入您的信箱" required>
-                        </div>
-                        <div style="text-align: center;">
-                            <button type="submit" class="btn btn-success">送出</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+  <!-- <div class="card_area">
+      <div class="card">
+        <h5 class="card-header">忘記密碼</h5>
+        <div class="card-body">
+          <div>
+            <form onsubmit="emailToForgetPwd(event)">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="forget_email"
+                  placeholder="請輸入您的信箱"
+                  required
+                />
+              </div>
+              <div style="text-align: center;">
+                <button type="submit" class="btn btn-success">送出</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
+    </div> -->
 
+  <footer id="footer_cpn"></footer>
 
-
-    <footer id="footer_cpn" style="margin-top: calc(100vh - 383px);"></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

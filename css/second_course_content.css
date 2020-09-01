@@ -1,7 +1,3 @@
-.col_color {
-    background-color: rgb(255, 154, 154);
-}
-
 .downLoad_btn {
     text-align: center;
 }
@@ -24,9 +20,15 @@
 }
 
 .snd_col_set {
-    width: 10%;
+    width: 20%;
 }
 
 .dl_btn_center {
     text-align: center;
+}
+
+.btn-pink {
+    color: black!important;
+    background-color: rgb(255, 154, 154)!important;
+    border-color: rgb(255, 154, 154)!important;
 }

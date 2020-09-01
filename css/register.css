@@ -1,15 +1,19 @@
 #register_top_title {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #register_form {
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .register_submit_button {
-    text-align: center;
-    width: 30%;
-    margin: auto;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
+.submit_btn_set {
+  width: 240px;
 }

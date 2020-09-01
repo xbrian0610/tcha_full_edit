@@ -1,6 +1,6 @@
 .media_elder_body {
-    margin-top: 10%;
-    margin-left: 12px;
+  margin-top: 10%;
+  margin-left: 12px;
 }
 
 /* .container {
@@ -9,7 +9,46 @@
 } */
 
 .elder_title {
-    text-align: left;
-    margin-top: 8%;
-    /* margin-left: 12px; */
+  text-align: left;
+  /* margin-top: 8%; */
+  /* margin-left: 12px; */
+  line-height: 35px;
+}
+
+.elder_mt {
+  font-size: 20px;
+  margin: 24px 0;
+}
+
+.elder_tg {
+  display: flex;
+}
+
+.elder_tg_display {
+  width: 121px;
+}
+
+.me_name {
+  background-color: rgb(96, 105, 230);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 10%;
+}
+
+.me_title {
+  background-color: rgb(71, 180, 77);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 10%;
+}
+
+.me_target {
+  background-color: rgb(149, 71, 180);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 10%;
+}
+
+.elder_tg_content {
+  width: 150%;
 }

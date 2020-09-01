@@ -2,195 +2,471 @@
 <html lang="en">
 
 <head>
-    <script src='./js/jquery.min.js'></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/register.css">
-    <script src="./js/navbar.js"></script>
-    <script src="./js/footer.js"></script>
-    <!-- <script src="./js/log_in.js"></script> -->
-    <script src="./js/index.js"></script>
-    <script src="./js/register.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/register.css" />
+  <script src="./js/navbar.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/log_in.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/register.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
-    <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
-
+  <title>108年預防及延緩失能身體活動場域型方案推展試辦計畫</title>
 </head>
 
 <body>
-    <div id="index_top"></div>
-
-
-    <div class="card_area">
-
-        <div class="card">
-            <h5 class="card-header">註冊</h5>
-            <div class="card-body" style="text-align: left;">
-                <form id="myForm" onsubmit="handle_submit(event)">
-                    <div class="form container">
-                        <div class="mb-3 row" style="display: flex;">
-                            <div class="col-lg-6">
-                                <label for="username">姓名</label>
-                                <div class="input-group">
-                                    <input name="name" type="text" class="form-control" id="username"
-                                        placeholder="請輸入您的名字" aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="email">E-mail</label>
-                                <input type="email" class="form-control" id="registerEmail" placeholder="請輸入您的E-mail"
-                                    name="email" required>
-                            </div>
-                        </div>
-                        <div class="mb-3 row" style="display: flex;">
-                            <div class="col-lg-6">
-                                <label for="password">密碼</label>
-                                <div class="input-group">
-                                    <input name="password" type="password" class=" form-control" id="registerPassword"
-                                        placeholder="請輸入您的密碼(8~12碼)" aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="ensure_pwd">確認密碼</label>
-                                <div class="input-group">
-                                    <input type="password" class=" form-control" id="ensure_pwd" placeholder="請再次確認您的密碼"
-                                        aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-3 row" style="display: flex;">
-                            <div class="col-lg-6">
-                                <label for="gender">性別</label>
-                                <select class="form-control" id="gender" name="gender">
-                                    <option value="1">男</option>
-                                    <option value="0">女</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="category">族別</label>
-                                <select name="race" class="form-control" id="category">
-                                    <option value="阿美族">阿美族</option>
-                                    <option value="泰雅族">泰雅族</option>
-                                    <option value="排灣族">排灣族</option>
-                                    <option value="布農族">布農族</option>
-                                    <option value="卑南族">卑南族</option>
-                                    <option value="魯凱族">魯凱族</option>
-                                    <option value="鄒族">鄒族</option>
-                                    <option value="賽夏族">賽夏族</option>
-                                    <option value="雅美族(達悟族)">雅美族(達悟族)</option>
-                                    <option value="邵族">邵族</option>
-                                    <option value="噶瑪蘭族">噶瑪蘭族</option>
-                                    <option value="太魯閣族">太魯閣族</option>
-                                    <option value="撒奇萊雅族">撒奇萊雅族</option>
-                                    <option value="賽德克族">賽德克族</option>
-                                    <option value="拉阿魯哇族">拉阿魯哇族</option>
-                                    <option value="卡那卡那富族">卡那卡那富族</option>
-                                    <option value="漢民族(河洛/客家)">漢族(河洛/客家)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="mb-3 row" style="display: flex;">
-                            <div class="col-lg-6">
-                                <label for="service">服務單位</label>
-                                <div class="input-group">
-                                    <input name="service_unit" type="text" class="form-control" id="service"
-                                        placeholder="請輸入您的服務單位" aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="position">職稱</label>
-                                <div class="input-group">
-                                    <input name="position" type="text" class="form-control" id="position"
-                                        placeholder="請輸入您的職稱" aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mb-3 row" style="display: flex;">
-                            <div class="col-lg-6">
-                                <label for="address">聯絡地址</label>
-                                <div class="input-group">
-                                    <input name="address" type="text" class="form-control" id="address"
-                                        placeholder="請輸入您的聯絡地址" aria-describedby="inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="phone">聯絡電話</label>
-                                <div class="input-group">
-                                    <input name="phone" type="tel" class="form-control" id="phone"
-                                        placeholder="請輸入您的手機號碼" pattern="09[0-9]{2}[0-9]{3}[0-9]{3}"
-                                        aria-describedby=" inputGroupPrepend2" required>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <span>請仔細閱讀並遵守下列註冊條款：<br />
-                            1、註冊會員必須遵守中華民國的各項法律法規。<br />
-                            2、不得發佈任何有關色情、違法、以及危害國家安全的言論。<br />
-                            3、嚴禁連接有關政治、色情、宗教迷信等違法訊息。<br />
-                            4、承擔一切因您的行為而直接或間接導致的民事或刑事法律責任。<br />
-                            5、互相尊重、遵守網際網路道德，嚴禁互相惡意攻擊、漫罵。<br />
-                            6、管理員及版主有權保留或刪除討論區中的任意內容。<br />
-                            7、本站網管擁有一切管理權力。
-                        </span>
-                        <div style="font-size: 13px;">
-                            系統將會把部分訊息以 cookies
-                            方式儲存在您的電腦中（不包含您的密碼及個人訊息）；此外您的電子郵件只是用來作為確認註冊身份及傳送密碼使用，將不會作為商業用途。
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                我已詳閱並同意
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group register_submit_button">
-                        <button type="submit" class="btn btn-primary" id="submit_btn">
-                            提交
-                        </button>
-                        <button style="display: none;" type="submit" class="btn btn-primary" id="loading_btn" disabled>
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            提交
-                        </button>
-                    </div>
-                </form>
-                <div class="modal fade" id="exampleModal_email_deliver" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel2">請至信箱收取驗證信!!</h5>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success"
-                                    onclick="location.href='./index.html'">回到首頁登入
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div style="position: relative;">
+    <img class="index_bg_img" src="./image/register_img.png" alt="" />
+    <div id="index_top" style="position: absolute; top: 50px;"></div>
+    <div style="
+          font-size: 48px;
+          position: absolute;
+          top: 240px;
+          text-align: center;
+          width: 100%;
+          color: #fff;
+        " class="index_subtitle_font">
+      註 冊
     </div>
+    <div style="
+          font-size: 40px;
+          position: absolute;
+          top: 320px;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+        " class="index_subtitle_font">
+      Sign Up
+    </div>
+  </div>
 
+  <div style="margin-top: -8px;">
+    <img style="width: 100%;" src="./image/split_img.png" alt="" />
+  </div>
 
-    <footer id="footer_cpn"></footer>
+  <div style="margin-top: 48px; margin-bottom: 48px;">
+    <div class="media_elder_area">
+      <div style="width: 90%; margin: auto; padding: 48px 0;">
+        <form id="myForm" onsubmit="handle_submit(event)">
+          <div class="form container">
+            <div class="mb-3 row" style="display: flex;">
+              <div class="col-lg-6">
+                <label for="username">姓名</label>
+                <div class="input-group">
+                  <input name="name" type="text" class="form-control" id="username" placeholder="請輸入您的真實姓名"
+                    aria-describedby="inputGroupPrepend2" required />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="registerEmail" placeholder="請輸入您的E-mail" name="email"
+                  required />
+              </div>
+            </div>
+            <div class="mb-3 row" style="display: flex;">
+              <div class="col-lg-6">
+                <label for="password">密碼</label>
+                <div style="display: flex;">
+                  <div class="input-group">
+                    <input name="password" type="password" class="form-control" id="registerPassword"
+                      placeholder="請輸入您的密碼(8~12碼)" aria-describedby="inputGroupPrepend2" required />
+                  </div>
+                  <div>
+                    <a onclick="ShowRegisterPwd1()"><img src="./image/show_pwd.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="ensure_pwd">確認密碼</label>
+                <div style="display: flex;">
+                  <div class="input-group">
+                    <input type="password" class="form-control" id="ensure_pwd" placeholder="請再次確認您的密碼"
+                      aria-describedby="inputGroupPrepend2" required />
+                  </div>
+                  <div>
+                    <a onclick="ShowEnsurePwd1()"><img src="./image/show_pwd.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+            <div class="mb-3 row" style="display: flex;">
+              <div class="col-lg-6">
+                <label for="gender">性別</label>
+                <select class="form-control" id="gender" name="gender">
+                  <option value="1">男</option>
+                  <option value="0">女</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <label for="category">族別</label>
+                <select name="race" class="form-control" id="category">
+                  <option value="阿美族">阿美族</option>
+                  <option value="泰雅族">泰雅族</option>
+                  <option value="排灣族">排灣族</option>
+                  <option value="布農族">布農族</option>
+                  <option value="卑南族">卑南族</option>
+                  <option value="魯凱族">魯凱族</option>
+                  <option value="鄒族">鄒族</option>
+                  <option value="賽夏族">賽夏族</option>
+                  <option value="雅美族(達悟族)">雅美族(達悟族)</option>
+                  <option value="邵族">邵族</option>
+                  <option value="噶瑪蘭族">噶瑪蘭族</option>
+                  <option value="太魯閣族">太魯閣族</option>
+                  <option value="撒奇萊雅族">撒奇萊雅族</option>
+                  <option value="賽德克族">賽德克族</option>
+                  <option value="拉阿魯哇族">拉阿魯哇族</option>
+                  <option value="卡那卡那富族">卡那卡那富族</option>
+                  <option value="漢民族(河洛/客家)">漢族(河洛/客家)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-3 row" style="display: flex;">
+              <div class="col-lg-6">
+                <label for="service">服務單位</label>
+                <div class="input-group">
+                  <input name="service_unit" type="text" class="form-control" id="service" placeholder="請輸入您的服務單位"
+                    aria-describedby="inputGroupPrepend2" required />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="position">職稱</label>
+                <div class="input-group">
+                  <input name="position" type="text" class="form-control" id="position" placeholder="請輸入您的職稱"
+                    aria-describedby="inputGroupPrepend2" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 row" style="display: flex;">
+              <div class="col-lg-6">
+                <label for="address">聯絡地址</label>
+                <div class="input-group">
+                  <input name="address" type="text" class="form-control" id="address" placeholder="請輸入您的聯絡地址"
+                    aria-describedby="inputGroupPrepend2" required />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="phone">聯絡電話</label>
+                <div class="input-group">
+                  <input name="phone" type="tel" class="form-control" id="phone" placeholder="請輸入您的手機號碼(09XXXXXXXX)"
+                    pattern="09[0-9]{2}[0-9]{3}[0-9]{3}" aria-describedby=" inputGroupPrepend2" required />
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 48px;">
+              <span>請仔細閱讀並遵守下列註冊條款：<br />
+                1、註冊會員必須遵守中華民國的各項法律法規。<br />
+                2、不得發佈任何有關色情、違法、以及危害國家安全的言論。<br />
+                3、嚴禁連接有關政治、色情、宗教迷信等違法訊息。<br />
+                4、承擔一切因您的行為而直接或間接導致的民事或刑事法律責任。<br />
+                5、互相尊重、遵守網際網路道德，嚴禁互相惡意攻擊、漫罵。<br />
+                6、管理員及版主有權保留或刪除討論區中的任意內容。<br />
+                7、本站網管擁有一切管理權力。
+              </span>
+            </div>
+            <div style="
+                  font-size: 18px;
+                  margin-top: 24px;
+                  color: rgb(88, 88, 88);
+                ">
+              系統將會把部分訊息以 cookies
+              方式儲存在您的電腦中（不包含您的密碼及個人訊息）；此外您的電子郵件只是用來作為確認註冊身份及傳送密碼使用，將不會作為商業用途。
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 24px; margin-left: 18px;">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+              <label class="form-check-label" for="invalidCheck">
+                我已詳閱並同意
+              </label>
+            </div>
+          </div>
+          <div class="form-group register_submit_button">
+            <button type="submit" class="btn btn-primary submit_btn_set" id="submit_btn">
+              提交
+            </button>
+            <button style="display: none;" type="submit" class="btn btn-primary submit_btn_set" id="loading_btn"
+              disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              提交
+            </button>
+          </div>
+        </form>
+        <div class="modal fade" id="exampleModal_email_deliver" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel2" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">
+                  請至信箱收取驗證信!!
+                </h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="location.href='./index.html'">
+                  回到首頁登入
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="card_area">
+      <div class="card">
+        <h5 class="card-header">註冊</h5>
+        <div class="card-body" style="text-align: left;">
+          <form id="myForm" onsubmit="handle_submit(event)">
+            <div class="form container">
+              <div class="mb-3 row" style="display: flex;">
+                <div class="col-lg-6">
+                  <label for="username">姓名</label>
+                  <div class="input-group">
+                    <input
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="請輸入您的名字"
+                      aria-describedby="inputGroupPrepend2"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="registerEmail"
+                    placeholder="請輸入您的E-mail"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3 row" style="display: flex;">
+                <div class="col-lg-6">
+                  <label for="password">密碼</label>
+                  <div class="input-group">
+                    <input
+                      name="password"
+                      type="password"
+                      class="form-control"
+                      id="registerPassword"
+                      placeholder="請輸入您的密碼(8~12碼)"
+                      aria-describedby="inputGroupPrepend2"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="ensure_pwd">確認密碼</label>
+                  <div class="input-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="ensure_pwd"
+                      placeholder="請再次確認您的密碼"
+                      aria-describedby="inputGroupPrepend2"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 row" style="display: flex;">
+                <div class="col-lg-6">
+                  <label for="gender">性別</label>
+                  <select class="form-control" id="gender" name="gender">
+                    <option value="1">男</option>
+                    <option value="0">女</option>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <label for="category">族別</label>
+                  <select name="race" class="form-control" id="category">
+                    <option value="阿美族">阿美族</option>
+                    <option value="泰雅族">泰雅族</option>
+                    <option value="排灣族">排灣族</option>
+                    <option value="布農族">布農族</option>
+                    <option value="卑南族">卑南族</option>
+                    <option value="魯凱族">魯凱族</option>
+                    <option value="鄒族">鄒族</option>
+                    <option value="賽夏族">賽夏族</option>
+                    <option value="雅美族(達悟族)">雅美族(達悟族)</option>
+                    <option value="邵族">邵族</option>
+                    <option value="噶瑪蘭族">噶瑪蘭族</option>
+                    <option value="太魯閣族">太魯閣族</option>
+                    <option value="撒奇萊雅族">撒奇萊雅族</option>
+                    <option value="賽德克族">賽德克族</option>
+                    <option value="拉阿魯哇族">拉阿魯哇族</option>
+                    <option value="卡那卡那富族">卡那卡那富族</option>
+                    <option value="漢民族(河洛/客家)">漢族(河洛/客家)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3 row" style="display: flex;">
+                <div class="col-lg-6">
+                  <label for="service">服務單位</label>
+                  <div class="input-group">
+                    <input
+                      name="service_unit"
+                      type="text"
+                      class="form-control"
+                      id="service"
+                      placeholder="請輸入您的服務單位"
+                      aria-describedby="inputGroupPrepend2"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="position">職稱</label>
+                  <div class="input-group">
+                    <input
+                      name="position"
+                      type="text"
+                      class="form-control"
+                      id="position"
+                      placeholder="請輸入您的職稱"
+                      aria-describedby="inputGroupPrepend2"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 row" style="display: flex;">
+                <div class="col-lg-6">
+                  <label for="address">聯絡地址</label>
+                  <div class="input-group">
+                    <input
+                      name="address"
+                      type="text"
+                      class="form-control"
+                      id="address"
+                      placeholder="請輸入您的聯絡地址"
+                      aria-describedby="inputGroupPrepend2"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="phone">聯絡電話</label>
+                  <div class="input-group">
+                    <input
+                      name="phone"
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="請輸入您的手機號碼"
+                      pattern="09[0-9]{2}[0-9]{3}[0-9]{3}"
+                      aria-describedby=" inputGroupPrepend2"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <span
+                >請仔細閱讀並遵守下列註冊條款：<br />
+                1、註冊會員必須遵守中華民國的各項法律法規。<br />
+                2、不得發佈任何有關色情、違法、以及危害國家安全的言論。<br />
+                3、嚴禁連接有關政治、色情、宗教迷信等違法訊息。<br />
+                4、承擔一切因您的行為而直接或間接導致的民事或刑事法律責任。<br />
+                5、互相尊重、遵守網際網路道德，嚴禁互相惡意攻擊、漫罵。<br />
+                6、管理員及版主有權保留或刪除討論區中的任意內容。<br />
+                7、本站網管擁有一切管理權力。
+              </span>
+              <div style="font-size: 13px;">
+                系統將會把部分訊息以 cookies
+                方式儲存在您的電腦中（不包含您的密碼及個人訊息）；此外您的電子郵件只是用來作為確認註冊身份及傳送密碼使用，將不會作為商業用途。
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  我已詳閱並同意
+                </label>
+              </div>
+            </div>
+            <div class="form-group register_submit_button">
+              <button type="submit" class="btn btn-primary" id="submit_btn">
+                提交
+              </button>
+              <button
+                style="display: none;"
+                type="submit"
+                class="btn btn-primary"
+                id="loading_btn"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                提交
+              </button>
+            </div>
+          </form>
+          <div
+            class="modal fade"
+            id="exampleModal_email_deliver"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel2"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel2">
+                    請至信箱收取驗證信!!
+                  </h5>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    onclick="location.href='./index.html'"
+                  >
+                    回到首頁登入
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <footer id="footer_cpn"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,27 +1,55 @@
 #course_top_title {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .course_table {
-    width: 60%!important;
-    margin: auto;
-    margin-top: 20px;
+  width: 60% !important;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .course_content_title_set {
-    white-space: nowrap;
-    text-align: center;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .table td {
-    vertical-align: middle!important;
+  vertical-align: middle !important;
 }
 
 .course_button {
-    width: 200px;
-    height: 200px;
-    max-width: 200px;
-    max-height: 200px;
-    margin: 20px;
-    font-size: 20px!important;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 20px;
+  font-size: 20px !important;
+}
+
+.test_button_set {
+  width: 320px;
+}
+
+.course_title {
+  font-size: 36px;
+}
+
+.course_intro {
+  margin-top: 24px;
+  font-size: 16px;
+  min-height: 160px;
+  text-align: justify;
+}
+
+.course_area_min {
+  min-height: 429px;
+}
+
+.course_area {
+  background-color: #fff;
+  margin: auto;
+  -moz-box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+  -webkit-box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+  box-shadow: 4px 4px 12px -2px rgba(20%, 20%, 40%, 0.5);
+  border-radius: 1%;
 }
